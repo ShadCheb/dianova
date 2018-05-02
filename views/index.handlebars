@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Permanent Studio</title>
+	<link rel="stylesheet" href="public/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+
+
+<!--Шапка-->
+<div class="menu-up">
+
+	<div class="container clearfix">
+
+		<div class="logo" id="logo">
+				<img src="public/img/logo.png" alt="Permanent Studio">
+				<p>Margarita Dianova</p>
+				<p>permanent studio</p>
+				<a href="index.html" class="logo-link"></a>
+		</div>
+
+		<button class="menu-up-btn"></button>
+		<div class="menu-up-navigation">
+			<ul>
+				<li><a href="#0" id="courses">Курсы</a></li>
+				<li><a href="#0" id="services">Услуги</a></li>
+				<li><a href="#0" id="about-us">О нас</a></li>
+				<li><a href="#0" id="reviews">Отзывы</a></li>
+				<li><a href="#0" id="contacts">Контакты</a></li>
+			</ul>
+		</div>
+
+	</div>
+
+</div>
+
+<div class="discount-block"></div>
+
+<header>
+	
+	<div class="container-main clearfix">
+		<div class="header-slide">
+			<ul class="header-slide-arena" data-current="0">
+
+				<li class="slide_1">
+					<div class="header-slide-text">
+						<h2>LOREM IPSUM DOLOR</h2>
+						<div class="line-h2"></div>
+						<p>
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+						</p>
+					</div>
+				</li>
+
+				<li class="slide_2">
+					<div class="header-slide-text">
+						<h2>LOREM IPSUM DOLOR</h2>
+						<div class="line-h2"></div>
+						<p>
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+						</p>
+					</div>
+				</li>
+
+				<li class="slide_3">
+					<div class="header-slide-text">
+						<h2>LOREM IPSUM DOLOR</h2>
+						<div class="line-h2"></div>
+						<p>
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+						</p>
+					</div>
+				</li>
+
+			</ul>
+
+			<div class="container">
+
+				<div class="header-slide-content">
+
+					<div class="header-slide-btn left"><</div>
+					<div class="header-slide-btn right">></div>
+					
+				</div>
+
+			</div>
+
+		</div>
+
+			<div class="btn-entry-up"></div>
+			<div class="btn-entry-down"></div>
+
+	</div>
+
+</header>
+
+<section class="courses">
+	
+	<div class="container clearfix">
+		
+		<div class="courses-menu">
+			<ul class="courses-filter">
+				<li class="all-courses courses-active">Все курсы</li>
+				<li class="brows-courses">Брови</li>
+				<li class="eyelashes-courses">Ресницы</li>
+				<li class="lips-courses">Губы</li>
+			</ul>
+		</div>
+
+		<div class="courses-content-main">
+
+		</div>
+
+		<!-- Шаблон -->
+
+		<template id="courses-template" style="display: none">
+			<div class="courses-content">
+				<div class="courses-content-rotate">
+					<div class="courses-content-img">
+						<div class="courses-content-area">
+							<div class="courses-content-h2"><h2></h2><div class="line-h2-litle"></div></div>
+							<div class="courses-content-durability"><p></p></div>
+							<div class="courses-content-price"><p></p></div>
+						</div>
+					</div>
+					<div class="courses-content-text">
+						<div class="courses-content-h2"><h2></h2><div class="line-h2-litle"></div></div>
+						<div class="courses-content-intended"><p></p></div>
+						<div class="courses-content-description"><p></p></div>
+						<div class="courses-content-botton"><button class="courses-content-btn">Записаться</button></div>
+					</div>
+				</div>
+			</div>
+		</template>
+<!-- Конец шаблона -->
+
+	</div>
+
+	<div class="btn-entry-up"></div>
+	<div class="btn-entry-down"></div>
+
+</section>
+
+<!--Плюсы компании-->
+<section class="advantages" id="advantages">
+	
+	<div class="container-main">
+		<div class="advantages-bgr">
+			<div class="container clearfix">
+				<div class="caption">
+					<h2>Почему стоит выбрать именно нас?</h2>
+				</div>
+
+				<div class="advantages-area">
+					<div class="advantages-area-border">
+					</div>
+
+						<div class="advantages-column">
+							<div class="advantages-cell adv-certificate">
+								<h3>Сертификат специалиста</h3>
+								<p>Выдается сертификат международного 
+								образца подтверждающий Вашу специальность.</p>
+							</div>
+							<div class="advantages-cell adv-support">
+								<h3>Поддержка 24/7</h3>
+								<p>Приступив к самостоятельной работе,
+								вы всегда сможете обратиться за
+								консультацией по любым вопросам
+								(Консультация и поддержка после
+								окончания обучения.) </p>
+							</div>
+							<div class="advantages-cell adv-individuality">
+								<h3>Индивидуальность</h3>
+								<p>Мы не набираем группы по 25 человек,
+								что бы не распыляться на большое
+								количество учеников, а уделить больше
+								времени именно Вам. Тем самым
+								разобрать больше ошибок и вопросов
+								еще на стадии обучения, что в результате
+								позволит Вам быть готовой к работе
+								с любыми клиентами. </p>
+							</div>
+							<div class="advantages-cell adv-attraction">
+								<h3>Привлечение клиентов и продажи</h3>
+								<p>Вы узнаете как привлекать клиентов
+								и где их искать; как правильно
+								продавать услуги и товары;
+								Как сделать привлечение клиента
+								бесплатным; маркетинг и СМИ.</p>
+							</div>
+						</div>
+						<div class="advantages-column">
+							<div class="advantages-cell adv-materials">
+								<h3>Материалы</h3>
+								<p>Предоставляются все необходимые
+								материалы на период обучения.</p>
+							</div>
+							<div class="advantages-cell adv-advice">
+								<h3>Лайфхаки</h3>
+								<p>Как продвигать группы в соц сетях;
+								как общаться со "сложными" клиентами;
+								как привлечь и заинтересовать клиентов;
+								как сделать новых клиентов постоянными;
+								практические секреты окрашивания
+								хной и другие "фишки".</p>
+							</div>
+							<div class="advantages-cell adv-practice">
+								<h3>Усиленная практика</h3>
+								<p>Вы проработаете все возможные техники,
+								поставите руку, поймете принцип
+								и механику работы с бровями любой
+								сложности! По окончанию обучения
+								Вы с легкостью сможете справиться даже
+								с самыми запущенными случаями и
+								не растерятесь в сложных ситуациях.</p>
+							</div>
+							<div class="advantages-cell adv-notebook">
+								<h3>Рабочая тетрадь</h3>
+								<p>Выдается рабочая тетрадь с собранной
+								информацией по каждой теме, которая
+								остается у Вас. В ней вы работаете в
+								процессе обучения и оставляете все
+								свои заметки. Сможете в любое время
+								заглянуть в неё и вспомнить
+								необходимую информацию.</p>
+							</div>
+						</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="btn-entry-up"></div>
+	<div class="btn-entry-down"></div>
+
+</section>
+
+
+<section class="services">
+	
+	<div class="container clearfix">
+		<div class="caption">
+			<h2>Наши услуги</h2>
+		</div>
+		
+		<div class="services-area">
+			<div class="services-service">
+				<div class="service-text"></div>
+				<div class="service-shadow"></div>
+				<div class="service-text-1"></div>
+				<div class="service-text-2"></div>
+				<div class="service-text-3">
+					<h3>Наращивание ресниц</h3>
+					<button class="service-btn" data-id="service-1">Узнать цены</button>
+				</div>
+				
+				<div class="service-img"></div>
+				<div class="service-img-1"></div>
+				<div class="service-img-2"></div>
+				<div class="service-img-3  service-tool-1"></div>
+				
+			</div>
+
+			<div class="services-service services-down">
+				<div class="service-img"></div>
+				<div class="service-shadow"></div>
+				<div class="service-img-1"></div>
+				<div class="service-img-2"></div>
+				<div class="service-img-3 service-tool-2"></div>
+
+				<div class="service-text"></div>
+				<div class="service-text-1"></div>
+				<div class="service-text-2"></div>
+				<div class="service-text-3">
+					<h3>Перманентный макияж</h3>
+					<button class="service-btn" data-id="service-2">Узнать цены</button>
+				</div>
+			</div>
+
+			<div class="services-service">
+				<div class="service-text"></div>
+				<div class="service-shadow"></div>
+				<div class="service-text-1"></div>
+				<div class="service-text-2"></div>
+				<div class="service-text-3">
+					<h3>Удаление<br>татуажа</h3>
+					<button class="service-btn" data-id="service-3">Узнать цены</button>
+				</div>
+				
+				<div class="service-img"></div>
+				<div class="service-img-1"></div>
+				<div class="service-img-2"></div>
+				<div class="service-img-3 service-tool-3"></div>
+
+			</div>
+
+			<div class="services-service services-down">
+				<div class="service-img"></div>
+				<div class="service-shadow"></div>
+				<div class="service-img-1"></div>
+				<div class="service-img-2"></div>
+				<div class="service-img-3 service-tool-4"></div>
+
+				<div class="service-text"></div>
+				<div class="service-text-1"></div>
+				<div class="service-text-2"></div>
+				<div class="service-text-3">
+					<h3>Депиляция шугаринг</h3>
+					<button class="service-btn" data-id="service-4">Узнать цены</button>
+				</div>
+			</div>
+
+
+		</div>
+
+	</div>
+
+</section>
+
+
+
+
+<div class="about-us">
+	
+	<div class="container-main clearfix">
+		<div class="advantages-bgr-2">
+
+			<div class="container">
+
+				<div class="caption">
+					<h2>О нас</h2>
+				</div>
+
+				<div class="about-us-arena">
+				
+					<div class="advantages-area">
+						<div class="advantages-area-border">
+						</div>
+							
+							<div class="about-us-block-arena">
+								<div class="about-us-block-list" data-current="0">
+
+									<div class="about-us-block clearfix">
+										<div class="about-us-block-img about-us-author-1">
+											<div class="about-us-block-author">Маргарита Дианова</div>
+										</div>
+										<div class="about-us-block-text">
+											<div class="about-us-block-author">Маргарита Дианова</div>
+											<div class="about-us-author  clearfix">
+												<div class="about-us-specialization">
+													<p>Специализация</p>
+												</div>
+												<div class="about-us-direction">
+													<p>Брови</p>
+												</div>
+												<div class="about-us-direction">
+													<p>Ресницы</p>
+												</div>
+											</div>
+											<div class="about-us-text">
+												<p>То, что русские женщины самые красивые в мире - 
+				неоспоримый факт. Ну а за красотой, как за 
+				бесценным цветком, нужно ухаживать. Я очень 
+				горжусь тем, что имею много навыков и знаний в
+				поддержании и проявлении красоты, которыми с
+				большим удовольствием делюсь. Брови - это не
+				просто модный тренд, это маленький, но очень
+				значимый штрих для современной красотки,
+				которая хочет идти в ногу с современными
+				канонами красоты и еще... немного обмануть
+				возраст. Правильные брови помогают нам выглядеть
+				свежо, молодо, тратить каждый день немножечко
+				меньше времени для того что бы выглядеть хорошо
+				и радоваться своему отражению в зеркале. Создавать
+				идеальные брови - это мое увлечение и страсть.
+												</p>
+											</div>
+
+										</div>
+									</div>
+
+									<div class="about-us-block clearfix">
+										<div class="about-us-block-img about-us-author-1">
+											<div class="about-us-block-author">Маргарита Дианова</div>
+										</div>
+										<div class="about-us-block-text">
+											<div class="about-us-block-author">Маргарита Дианова</div>
+											<div class="about-us-author clearfix">
+												<div class="about-us-specialization">
+													<p>Специализация</p>
+												</div>
+												<div class="about-us-direction">
+													<p>Брови</p>
+												</div>
+												<div class="about-us-direction">
+													<p>Ресницы</p>
+												</div>
+											</div>
+											<div class="about-us-text">
+												<p>То, что русские женщины самые красивые в мире - 
+				неоспоримый факт. Ну а за красотой, как за 
+				бесценным цветком, нужно ухаживать. Я очень 
+				горжусь тем, что имею много навыков и знаний в
+				поддержании и проявлении красоты, которыми с
+				большим удовольствием делюсь. Брови - это не
+				просто модный тренд, это маленький, но очень
+				значимый штрих для современной красотки,
+				которая хочет идти в ногу с современными
+				канонами красоты и еще ... немного обмануть
+				возраст. Правильные брови помогают нам выглядеть
+				свежо, молодо, тратить каждый день немножечко
+				меньше времени для того что бы выглядеть хорошо
+				и радоваться своему отражению в зеркале. Создавать
+				идеальные брови - это мое увлечение и страсть.
+												</p>
+											</div>
+
+										</div>
+									</div>
+									
+								</div>
+							</div>
+	
+					</div>
+
+					<div class="about-us-btn left"><</div>
+					<div class="about-us-btn right">></div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<div class="reviews">
+	
+		<div class="container clearfix">
+
+			<div class="caption">
+				<h2>Отзывы</h2>
+			</div>
+
+			<div class="reviews-arena">
+				
+				<div class="reviews-block">
+					<div class="reviews-block-img">
+						<div class="reviews-img-before"></div>
+						<div class="reviews-author-1"></div>
+					</div>
+					<div class="reviews-block-head">
+						<p>Наталья Иванова</p>
+					</div>
+					<div class="reviews-block-text">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae eum laborum, voluptas esse inventore necessitatibus asperiores possimus sed sint ea tempore quis, error eos aliquid saepe ullam dolorum doloribus et!</p>
+					</div>
+
+				</div>
+				<div class="reviews-block">
+					<div class="reviews-block-img">
+						<div class="reviews-img-before"></div>
+						<div class="reviews-author-1"></div>
+					</div>
+					<div class="reviews-block-head">
+						<p>Наталья Иванова</p>
+					</div>
+					<div class="reviews-block-text">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae eum laborum, voluptas esse inventore necessitatibus asperiores possimus sed sint ea tempore quis, error eos aliquid saepe ullam dolorum doloribus et!</p>
+					</div>
+				</div>
+				<div class="reviews-block">
+					<div class="reviews-block-img">
+						<div class="reviews-img-before"></div>
+						<div class="reviews-author-1"></div>
+					</div>
+					<div class="reviews-block-head">
+						<p>Наталья Иванова</p>
+					</div>
+					<div class="reviews-block-text">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae eum laborum, voluptas esse inventore necessitatibus asperiores possimus sed sint ea tempore quis, error eos aliquid saepe ullam dolorum doloribus et!</p>
+					</div>
+				</div>
+				<div class="reviews-block">
+					<div class="reviews-block-img">
+						<div class="reviews-img-before"></div>
+						<div class="reviews-author-1"></div>
+					</div>
+					<div class="reviews-block-head">
+						<p>Наталья Иванова</p>
+					</div>
+					<div class="reviews-block-text">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae eum laborum, voluptas esse inventore necessitatibus asperiores possimus sed sint ea tempore quis, error eos aliquid saepe ullam dolorum doloribus et!</p>
+					</div>
+				</div>
+
+			</div>
+	
+		</div>
+
+
+</div>
+
+
+<div class="contacts">
+	
+	<div class="container-main">
+			<div class="caption">
+				<h2>Наши координаты</h2>
+			</div>
+
+			<div class="contacts-map">
+				
+				<div class="contacts-map-text">
+					<div class="map-text-border">
+						<p>Рады видеть вас у себя в студии с пн-вск с 11:00 до 22:00</p>
+						<p> г.Санкт-Петербург, Литейный проспект 29, ст.м. Чернышевская.</p>
+						<p>...................................</p>
+						<p>+7 (931) 385 20 72</p>
+					</div>
+				</div>
+
+			</div>
+	</div>
+
+</div>
+
+<footer class="clearfix">
+	<div class="footer-block">
+		<p>Следите занашими акциями в социальных сетях:</p>
+		<div class="footer-block-seti seti-vk"></div>
+		<div class="footer-block-seti seti-i"></div>
+	</div>
+</footer>
+
+
+<div class="modal-content-discount">
+	<div class="modal-content-close">
+		Закрыть
+	</div>
+	
+	<div class="caption">
+		<h2>Пакет услуг</h2>
+	</div>
+
+	<div class="stock-window">
+		<div class="stock-list">
+			<div class="stock">
+				<div class="stock-name">
+					<p>Пакет #1</p>
+				</div>
+				<div class="stock-option">
+					<div class="stock-option-header">Перманент 2 зон в один день:</div>
+					<div class="stock-option-flex">
+						<div class="stock-option-list">Перманент бровей и век</div>
+						<div class="stock-option-ellipsis"></div>
+					</div>
+
+					<div class="stock-option-flex">
+						<div class="stock-option-list">Перманент бровей и губ</div>
+						<div class="stock-option-ellipsis"></div>
+					</div>
+
+					<div class="stock-option-flex">
+						<div class="stock-option-list">Перманент век и губ</div>
+						<div class="stock-option-ellipsis"></div>
+					</div>
+				</div>
+				<div class="stock-top-master">
+					<div class="stock-top-master-header"><span class="big-window">Топ-мастер</span><span class="litle-window">&nbsp</span></div>
+					<div class="stock-top-master-list">18000р <span class="big-window">(экономия 2000р)</span></div>
+					<div class="stock-top-master-list">18000р <span class="big-window">(экономия 2000р)</span></div>
+					<div class="stock-top-master-list">18000р <span class="big-window">(экономия 2000р)</span></div>
+				</div>
+				<div class="stock-master">
+					<div class="stock-master-header"><span class="big-window">Мастер</span><span class="litle-window">&nbsp</span></div>
+					<div class="stock-master-list">10800р <span class="big-window">(экономия 1200р)</span></div>
+					<div class="stock-master-list">10800р <span class="big-window">(экономия 1200р)</span></div>
+					<div class="stock-master-list">10800р <span class="big-window">(экономия 1200р)</span></div>
+				</div>
+			</div>
+
+			<div class="stock">
+				<div class="stock-name">
+					<p>Пакет #2</p>
+				</div>
+				<div class="stock-option">
+					<div class="stock-option-header">Перманент 3 зон в один день:</div>
+					<div class="stock-option-flex">
+						<div class="stock-option-list">Перманент бровей, век и губ</div>
+						<div class="stock-option-ellipsis"></div>
+					</div>
+				</div>
+				<div class="stock-top-master">
+					<div class="stock-top-master-header"><span class="big-window">Топ-мастер</span><span class="litle-window">&nbsp</span></div>
+					<div class="stock-top-master-list">24000р <span class="big-window">(экономия 6000р)</span></div>
+				</div>
+				<div class="stock-master">
+					<div class="stock-master-header"><span class="big-window">Мастер</span><span class="litle-window">&nbsp</span></div>
+					<div class="stock-master-list">14500р <span class="big-window">(экономия 3500р)</span></div>
+				</div>
+			</div>
+
+			<div class="stock">
+				<div class="stock-name">
+					<p>Пакет #3</p>
+				</div>
+				<div class="stock-option">
+					<div class="stock-option-header">&nbsp</div>
+					<div class="stock-option-flex">
+						<div class="stock-option-list">Перманент бровей + ботокс для ресниц</div>
+						<div class="stock-option-ellipsis"></div>
+					</div>
+				</div>
+				<div class="stock-top-master">
+					<div class="stock-top-master-header"><span class="big-window">Топ-мастер</span><span class="litle-window">&nbsp</span></div>
+					<div class="stock-top-master-list">11500р <span class="big-window">(экономия 1000р)</span></div>
+				</div>
+				<div class="stock-master">
+					<div class="stock-master-header"><span class="big-window">Мастер</span><span class="litle-window">&nbsp</span></div>
+					<div class="stock-master-list">7500р <span class="big-window">(экономия 1000р)</span></div>
+				</div>
+			</div>
+
+			<div class="stock">
+				<div class="stock-name">
+					<p>Пакет #4</p>
+				</div>
+				<div class="stock-option">
+					<div class="stock-option-header">&nbsp</div>
+					<div class="stock-option-flex">
+						<div class="stock-option-list">Наращивание ресниц + оформление бровей</div>
+						<div class="stock-option-ellipsis"></div>
+					</div>
+				</div>
+				<div class="stock-top-master">
+					<div class="stock-top-master-header"><span class="big-window">Топ-мастер</span><span class="litle-window">&nbsp</span></div>
+					<div class="stock-top-master-list">скидка 500р</div>
+				</div>
+				<div class="stock-master">
+					<div class="stock-master-header"><span class="big-window">Мастер</span><span class="litle-window">&nbsp</span></div>
+					<div class="stock-master-list">скидка 500р</div>
+				</div>
+			</div>
+
+			<div class="stock">
+				<div class="stock-name">
+					<p>Пакет #5</p>
+				</div>
+				<div class="stock-option">
+					<div class="stock-option-header">&nbsp</div>
+					<div class="stock-option-flex">
+						<div class="stock-option-list">Перманент брови + ресницы классика</div>
+						<div class="stock-option-ellipsis"></div>
+					</div>
+				</div>
+				<div class="stock-top-master">
+					<div class="stock-top-master-header"><span class="big-window">Топ-мастер</span><span class="litle-window">&nbsp</span></div>
+					<div class="stock-top-master-list">11700р <span class="big-window">(экономия 1000р)</span></div>
+				</div>
+				<div class="stock-master">
+					<div class="stock-master-header"><span class="big-window">Мастер</span><span class="litle-window">&nbsp</span></div>
+					<div class="stock-master-list">7700р <span class="big-window">(экономия 1000р)</span></div>
+				</div>
+			</div>
+
+			<div class="stock">
+				<div class="stock-name">
+					<p>Пакет #6</p>
+				</div>
+				<div class="stock-option">
+					<div class="stock-option-header">&nbsp</div>
+					<div class="stock-option-flex">
+						<div class="stock-option-list">Перманент губ + ресницы классика</div>
+						<div class="stock-option-ellipsis"></div>
+					</div>
+				</div>
+				<div class="stock-top-master">
+					<div class="stock-top-master-header"><span class="big-window">Топ-мастер</span><span class="litle-window">&nbsp</span></div>
+					<div class="stock-top-master-list">11700р <span class="big-window">(экономия 1000р)</span></div>
+				</div>
+				<div class="stock-master">
+					<div class="stock-master-header"><span class="big-window">Мастер</span><span class="litle-window">&nbsp</span></div>
+					<div class="stock-master-list">7700р <span class="big-window">(экономия 1000р)</span></div>
+				</div>
+			</div>
+
+			<div class="stock">
+				<div class="stock-name">
+					<p>Пакет #7</p>
+				</div>
+				<div class="stock-option">
+					<div class="stock-option-header">Депиляция/шугаринг:</div>
+					<div class="stock-option-flex">
+						<div class="stock-option-list">Ноги + бикини</div>
+						<div class="stock-option-ellipsis"></div>
+					</div>
+					<div class="stock-option-flex">
+						<div class="stock-option-list">Ноги + руки + бикини</div>
+						<div class="stock-option-ellipsis"></div>
+					</div>
+				</div>
+				<div class="stock-top-master">
+					<div class="stock-option-header">&nbsp</div>
+					<div class="stock-top-master-list">2500р</div>
+					<div class="stock-top-master-list">2000р</div>
+				</div>
+			</div>
+
+			<div class="stock-block">
+			</div>
+		</div>
+		
+		<div class="gradient-up"></div>
+		<div class="gradient-down"></div>
+	</div>
+
+</div>
+
+
+<div class="modal-content-pricelist">
+	<div class="modal-content-close">
+		Закрыть
+	</div>
+
+	<div class="caption">
+		<h2>Прайс-лист</h2>
+	</div>
+
+	
+	<div class="window-block">
+		<div class="services-modal-list"></div>
+	</div>
+
+
+	<template id="services-template" style="display: none">
+		<div class="services-block"></div>
+		<div class="services-block-caption">
+			<p></p>
+		</div>
+		
+		<div class="services-block-subtitle">
+			<p></p>
+		</div>
+
+		<div class="services-block-list"></div>
+
+			<div class="services-block-elem">
+				<div class="services-elem-service">
+					<p></p>
+				</div>
+				<div class="services-elem-ellipsis"></div>
+				<button class="services-elem-btn">
+					<span class="big-window">Записаться</span><span class="litle-window">+</span>
+				</button>
+				<div class="services-elem-price">
+					<p></p>
+				</div>
+			</div>
+	</template>
+
+</div>
+
+
+<div class="modal-content-form">
+	<div class="modal-content-close">
+		Закрыть
+	</div>
+
+	<div class="caption">
+		<h2>Запись</h2>
+	</div>
+	<div class="clarification-caption">Заполните форму и мы с Вами обязательно свяжимся для подтверждения записи</div>
+	<div class="form-form">
+		<form method="post" action="/index">
+			<div class="box-services-arena"></div>
+			<input type="text" class="client-name" name="name" placeholder="Имя" required>
+			<input type="text" class="client-phone" name="phone" placeholder="Номер телефона" required>
+			<input type="text" class="client-mail" name="email" placeholder="Электронная почта">
+			<input type="date" name="date" value="" placeholder="Дата">
+			<input type="time" name="time" value="" placeholder="Время">
+			<input type="textarea" name="serv" style="display: none;">
+
+			<button type="submit" class="btn-forum">Отправить</button>
+		<form>
+	</div>
+	{{msg}}
+
+</div>
+
+
+<div class="modal-content-choice"> 
+	<div class="modal-content-close">
+		Закрыть
+	</div>
+
+	<div class="choice-block">
+		<button class="btn-add-service">Добавить</button>
+		<button class="btn-form">Оформить</button>
+	</div>
+	
+</div>
+
+
+<template id="box-services-template" style="display: none;">
+	<div class="box-services-element">
+		<p></p>
+		<button class="box-services-element-close">X</button>
+	</div>
+</template>
+
+<div class="overlay"></div>
+
+<script src="public/js/js.js"></script>
+
+	
+</body>
+</html>
