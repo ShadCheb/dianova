@@ -1119,6 +1119,15 @@ footer{
   display: block;
   animation: bounce 0.6s;
 }
+.text-offer{
+  color: #707070;
+  font-size: 11px;
+  line-height: 15px;
+  text-align: left;
+  padding: 15px 0;
+}
+
+
 @keyframes bounce {
   0% {transform: translateX(-2000px);}
   70% {transform: translateX(30px);}
@@ -1523,13 +1532,18 @@ footer{
     top: 69px;
     right: 0;
     width: 350px;
+    height: 0;
     background: #006d6a;
   }
     .menu-up-navigation li{
       display: block;
       width: 100%;
     }
-
+  .menu-show{
+    display: block;
+    height: auto;
+    transition: all 0.5s ease-in-out;
+  }
 
 .services{
   width: 100%;
@@ -1762,6 +1776,11 @@ footer{
     margin-top: -37px;
     font-size: 64px;
     line-height: 64px;
+  }
+  .text-offer{
+    font-size: 10px;
+    line-height: 14px;
+    padding: 14px 0;
   }
 }
 

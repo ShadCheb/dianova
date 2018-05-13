@@ -41,7 +41,7 @@ function autoClick(){
 	functionClick.dispatchEvent(clickEvent);
 }
 
-//setInterval(autoClick, 2000);
+setInterval(autoClick, 6000);
 
 if(parseInt(slideArray['header-slide-content'].arena.dataset.current) == 0) slideArray['header-slide-content'].left.style.display = 'none';
 if(parseInt(slideArray['about-us-arena'].arena.dataset.current) == 0) slideArray['about-us-arena'].left.style.display = 'none';
@@ -231,7 +231,7 @@ for(var i = 0; i < menuUpNavigation.length; i++){
 
 	function move(event){
 		event.preventDefault();
-		menuUp.style.display = ''
+		menuUp.classList.remove('menu-show');
 		var hash = '.' + event.target.getAttribute('id');
 		var V = 0.2;
 		var w = window.pageYOffset;  // прокрутка
@@ -560,3 +560,8 @@ function deleteServiceInBox(e){
 	}
 }
 
+menuUpBtn.addEventListener('click', function(e){
+	e.preventDefault();
+	if(menuUp.classList.contains('menu-show')) menuUp.classList.remove('menu-show');
+	else menuUp.classList.add('menu-show');
+});
