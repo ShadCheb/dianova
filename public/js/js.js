@@ -1,4 +1,4 @@
-
+//Слайды
 var slideWidth = 1440;
 var slideArena = document.querySelector('.header-slide-arena');
 var slideArray = {
@@ -24,10 +24,6 @@ slideArray['about-us-arena'].left.addEventListener('click', prevSlide);
 
 var functionClick = slideArray['header-slide-content'].right;
 
-var menuUpBtn = document.querySelector('.menu-up-btn');
-var menuUp = document.querySelector('.menu-up-navigation');
-
-
 function autoClick(){
 	var currentSlide = parseInt(slideArray['header-slide-content'].arena.dataset.current);
 	var clickEvent = new Event('click');
@@ -45,7 +41,6 @@ setInterval(autoClick, 6000);
 
 if(parseInt(slideArray['header-slide-content'].arena.dataset.current) == 0) slideArray['header-slide-content'].left.style.display = 'none';
 if(parseInt(slideArray['about-us-arena'].arena.dataset.current) == 0) slideArray['about-us-arena'].left.style.display = 'none';
-
 
 function nextSlide(evt){
 	var target = evt.target;
@@ -81,6 +76,9 @@ function prevSlide(evt){
 }
 
 
+var menuUpBtn = document.querySelector('.menu-up-btn');
+var menuUp = document.querySelector('.menu-up-navigation');
+
 var filter = 'all';
 
 var filterConformity = {
@@ -113,14 +111,12 @@ function selectedFilter(event){
     }
 
 	target.classList.add('courses-active');
-	container.innerHTML = ''
+	container.innerHTML = '';
 	setActiveFilter(filter);
 }
 
 function addCoursesInForm(e){
-
 	e.preventDefault();
-
 	var target = e.target;
 
 	if(target.getAttribute('data-id')){
@@ -129,9 +125,11 @@ function addCoursesInForm(e){
 				boxServicesArr.push('Курс ' + count['name']);
 			}
 		});
-		choiceContent.classList.add('modal-content-show');
+		//choiceContent.classList.add('modal-content-show');
 	}
 }
+
+let objCourses = {};
 
 /*Отрисовка в шаблоне*/
 function getElementFromTemplate(data){
@@ -171,9 +169,12 @@ function getElementFromTemplate(data){
 	element.querySelector('.courses-content-durability').firstElementChild.textContent = data.durability;
 	element.getElementsByClassName('courses-content-h2')[1].firstElementChild.textContent = data.name;
 	element.querySelector('.courses-content-intended').firstElementChild.textContent = data.intended;
-	element.querySelector('.courses-content-description').firstElementChild.textContent = data.description;
+	//element.querySelector('.courses-content-description').firstElementChild.textContent = data.description;
+	element.querySelector('.courses-btn-detail').dataset.val = data.id;
 	element.querySelector('.courses-content-btn').dataset.id = data.id;
 	
+	objCourses[data.id] = data.description;
+
 	return element;
 }
 
@@ -206,7 +207,9 @@ function renderContainer(containerToRender){
 	});
 
 	container.appendChild(fragment);
-	container.addEventListener('click', addCoursesInForm); 
+	container.addEventListener('click', addCoursesInForm);
+
+
 }
 
 /*Загрузка данных*/
@@ -227,12 +230,11 @@ for(var i = 0; i < menuUpNavigation.length; i++){
 	menuUpNavigation[i].addEventListener('click', move);
 }
 
-
-
 	function move(event){
 		event.preventDefault();
 		menuUp.classList.remove('menu-show');
 		var hash = '.' + event.target.getAttribute('id');
+		if(hash == '.gallery') return;
 		var V = 0.2;
 		var w = window.pageYOffset;  // прокрутка
 		var t = document.querySelector(hash).getBoundingClientRect().top;  // отступ от окна браузера до id
@@ -257,25 +259,26 @@ for(var i = 0; i < menuUpNavigation.length; i++){
 
 /*Хочу скидку*/
 
-
-
+/*
 var discountBtn = document.querySelector('.discount-block');
 var discountContent = document.querySelector('.modal-content-discount'); //Окно ПопАп Хочу скидку
+*/
 
-var close = document.getElementsByClassName('modal-content-close');
+/*var close = document.getElementsByClassName('modal-content-close');*/
 
-var pricelistBtn = document.getElementsByClassName('service-btn'); //Кнопка Узнать цены
-var pricelistContent = document.querySelector('.modal-content-pricelist'); //Окно ПопАп Прайс лист
+/*var pricelistBtn = document.getElementsByClassName('service-btn'); //Кнопка Узнать цены*/
+/*var pricelistContent = document.querySelector('.modal-content-pricelist'); //Окно ПопАп Прайс лист*/
+/*var galleryContent = document.querySelector('.modal-content-gallery');*/
 
 var servicesCaption = document.getElementsByClassName('services-block-caption'); //Кнопка заголовок услуги в ПопАп Прайс Лист
 var servicesList = document.getElementsByClassName('services-block-list'); //
 
-var recordingBtn = document.getElementsByClassName('btn-entry-up'); //Кнопка для появления формы
-var recordingBtnn = document.getElementsByClassName('courses-content-btn');
-var recordingContent = document.querySelector('.modal-content-form'); //Окно Попап Форма записи
+/*var recordingBtn = document.getElementsByClassName('btn-entry-up'); //Кнопка для появления формы*/
+/*var recordingBtnn = document.getElementsByClassName('courses-content-btn');*/
+/*var recordingContent = document.querySelector('.modal-content-form'); //Окно Попап Форма записи*/
 var choiceContent = document.querySelector('.modal-content-choice');
 
-var overlay = document.querySelector('.overlay');
+/*var overlay = document.querySelector('.overlay');*/
 
 var boxArena = document.querySelector('.box-services-arena');
 
@@ -295,28 +298,29 @@ var template = document.querySelector('#services-template');
 var element;
 
 //Объект содержащий ссылки на попап окна, в зависимости от нажатой кнопки
-var popUpWindowArray = {
+/*var popUpWindowArray = {
+	'gallery': galleryContent,
 	'service-btn': pricelistContent,
 	'discount-block': discountContent,
 	'btn-entry-up': recordingContent
-}
+}*/
 //Объект содержащий ссылки на попап окна, в зависимости от нажатой кнопки Закрыть
-var popUpWindowClosedArray = {
+/*var popUpWindowClosedArray = {
 	'modal-content-pricelist': pricelistContent,
 	'modal-content-discount': discountContent,
 	'modal-content-form': recordingContent,
 	'modal-content-choice': choiceContent
-}
+}*/
 
 var servicesBlock = document.querySelector('.services-block');
 
 
 var boxServicesArr = [];
 
-discountBtn.addEventListener('click', popupOpenFunction); //Обработчик кнопки Хочу скидку
+/*discountBtn.addEventListener('click', popupOpenFunction); //Обработчик кнопки Хочу скидку*/
 
-
-//Обработчик закрытияна каждую кнопку
+/*
+//Обработчик закрытия на каждую кнопку
 for (var i = 0; i < close.length; i++) {
 	close[i].addEventListener('click', closeFunction);
 }
@@ -324,8 +328,9 @@ for (var i = 0; i < close.length; i++) {
 for (var i = 0; i < recordingBtn.length; i++) {
 	recordingBtn[i].addEventListener('click', popupOpenFunction);
 }
+*/
 
-
+/*
 function backgroundBlocker(event){
 	if(event == 'open'){
 		overlay.style.display = 'block';
@@ -336,15 +341,17 @@ function backgroundBlocker(event){
 		document.body.style.overflow = 'auto';
 	}
 }
-
+*/
+/*
 function popupOpenChoice(){
 	choiceContent.classList.add('modal-content-show');
 	backgroundBlocker('open');
 }
+*/
 
 function renderingBoxServices(){
 
-	/*Отрисовка массивас выбранными услугами*/
+	/*Отрисовка массива с выбранными услугами*/
 	var num = 0;
 	var template = document.querySelector('#box-services-template');
 	var includeTextArea = document.querySelector('.form-form input[type=textarea]');
@@ -369,17 +376,19 @@ function renderingBoxServices(){
 		includeTextArea.value += elem + '; ';
 	});
 }
-
+/*
 function popupOpenFunction(e){
 	e.preventDefault();
 	var popUpWindow = popUpWindowArray[e.target.classList[0]];
+	var modal = document.querySelector('.modal');
+	modal.hidden = false;
 	popUpWindow.classList.add('modal-content-show');
-			/*Проверка принадлежит ли нажатая кнопка вызову ПопАп окна с прайс листом*/
+			//Проверка принадлежит ли нажатая кнопка вызову ПопАп окна с прайс листом
 	if(e.target.classList[0] == 'service-btn') serviceChoice(e.target.getAttribute('data-id'));
 	if(e.target.classList[0] == 'btn-entry-up') renderingBoxServices();
 	backgroundBlocker('open');
-}
-
+}*/
+/*
 function closeFunction(e){
 	e.preventDefault();
 	var popUpWindowClosed = popUpWindowClosedArray[e.target.parentElement.classList[0]];
@@ -394,13 +403,7 @@ function closeAllPopUp(){
 		popUpWindowClosedArray[key].classList.remove('modal-content-show');
 	}
 }
-
-window.addEventListener('keydown', function(e){
-	if (e.keyCode === 27) {
-		closeAllPopUp();
-		backgroundBlocker('closed');
-	}
-});
+*/
 
 
 /*Прайс-лист*/
@@ -411,6 +414,7 @@ if('content' in template){
     element = template.cloneNode(true);
 }
 
+var choiceModal = '';
 
 function renderingServicesHead(bd){
 	var current = 0;
@@ -428,6 +432,7 @@ function renderingServicesHead(bd){
 		current++;
 
 		blockServices.addEventListener('click', decorServices);
+		choiceModal = new Modal('services-block', 'services-elem-btn', 'modal-content-choice');
 
 		var list = blockServices.appendChild(servicesBlockList.cloneNode(true));
 
@@ -477,11 +482,9 @@ function functionDeployment(e){
 	}
 }
 
-
-for(var i = 0; i < pricelistBtn.length; i++){
+/*for(var i = 0; i < pricelistBtn.length; i++){
     pricelistBtn[i].addEventListener('click', popupOpenFunction);
-}
-
+}*/
 
 function closeDeployment(cl){
 	for(var i = 0; i < cl.length; i++){
@@ -492,7 +495,6 @@ function closeDeployment(cl){
 function openDeployment(e){
 	e.classList.add('click');
 }
-
 
 function serviceChoice(dataId){
 	dataId = Number(dataId[dataId.length - 1] - 1);
@@ -506,15 +508,11 @@ function serviceChoice(dataId){
 
 /*Переход от закупки до формы*/
 
-
-
-
-
 function decorServices(e){
 	var target = e.target;
 	if(target.getAttribute('data-id') || target.parentElement.getAttribute('data-id')){
 		if(target.parentElement.getAttribute('data-id')) target = target.parentElement;
-		popupOpenChoice();
+		//popupOpenChoice();
 		var nameService = target.parentElement.querySelector('.services-elem-service p').textContent;
 		var headService = target.parentElement.parentElement.parentElement.querySelector('.services-block-caption p').textContent;
 		boxServicesArr.push(headService + ' ' + nameService);
@@ -529,15 +527,35 @@ btnForm.addEventListener('click', orderProcessing);
 function orderProcessing(e){
 	e.preventDefault();
 	renderingBoxServices();
-	closeAllPopUp();
+	choiceModal.close();
+	choiceModal.close();
+	formBtnModal.open();
+	/*closeAllPopUp();
 
 	recordingContent.classList.add('modal-content-show');
 	backgroundBlocker('open');
 
 	var eventClick = new Event('click');
 	recordingBtn[0].dispatchEvent(eventClick);
+	*/
 }
 
+document.querySelector('.courses').addEventListener('click', function(e){
+	e.preventDefault();
+	let target = e.target;
+	let attribute = target.dataset.id;
+	if(attribute){
+		formBtnModal.open();
+		renderingBoxServices();	
+	}
+});
+	
+document.querySelector('.services').addEventListener('click', function(e){
+	e.preventDefault();
+	let target = e.target;
+	let attribute = target.dataset.id;
+	if(attribute) serviceChoice(attribute);
+});
 
 /*Кнопка Добавить*/
 
@@ -546,7 +564,8 @@ btnAdd.addEventListener('click', addInBox);
 
 function addInBox(e){
 	e.preventDefault();
-	choiceContent.classList.remove('modal-content-show');
+	/*choiceContent.classList.remove('modal-content-show');*/
+	choiceModal.close();
 }
 
 boxArena.addEventListener('click', deleteServiceInBox);
@@ -559,9 +578,215 @@ function deleteServiceInBox(e){
 		renderingBoxServices();
 	}
 }
-
+/*
 menuUpBtn.addEventListener('click', function(e){
 	e.preventDefault();
-	if(menuUp.classList.contains('menu-show')) menuUp.classList.remove('menu-show');
-	else menuUp.classList.add('menu-show');
+	menuUp.classList.toggle('menu-show');
 });
+*/
+
+
+//класс Модальное окно
+let windowModal = [];
+
+function Modal(block, btn, modal){
+	
+	this.block;
+	this.btn = btn;
+	this.modal = document.querySelector('.' + modal);
+	let self = this;
+
+	if(block) {
+		let arrBtn = document.querySelector('.' + block);
+		arrBtn.onclick = function(e){
+			let target = e.target;
+			while(target != this){
+				if(target.classList.contains(btn)){
+					self.open();
+					return false;
+				}
+				target = target.parentElement;
+			}
+		}
+	}
+	else {
+		let arrBtn = document.querySelectorAll('.' + btn);
+		for(let i = 0; i < arrBtn.length; i++){
+			arrBtn[i].onclick = function(){
+				self.open();
+				return false;
+			}
+		}
+	}
+
+	let close = this.modal.parentElement.querySelector('.modal-close');
+	close.onclick = function(){
+		self.close();
+		return false;	
+	};
+
+	Modal.prototype.open = function(){
+		document.querySelector('body').style.cssText = 'overflow: hidden;';
+		this.modal.parentElement.hidden = false;
+		this.modal.classList.add('modal-content-show');
+		windowModal.push(this.modal);
+	};
+
+	Modal.prototype.close = function(){
+		let len = windowModal.length;
+		let a = windowModal[len - 1];
+		if(len < 2) document.querySelector('body').style.cssText = '';
+		a.classList.remove('modal-content-show');
+		a.parentElement.hidden = true;
+		windowModal.splice(-1, 1);
+	};
+};
+
+let disontModal = new Modal(false, 'discount-block', 'modal-content-discount');
+let galleryModal = new Modal(false, 'gallery', 'modal-content-gallery');
+let priceListModal = new Modal('services', 'service-btn', 'modal-content-pricelist');
+let formBtnModal = new Modal(false, 'btn-entry-up', 'modal-content-form');
+let formCursesModal = new Modal('courses', 'courses-content-btn', 'modal-content-form');
+let detailCurseModal = new Modal('courses', 'courses-btn-detail', 'modal-content-detail');
+
+document.querySelector('.courses').addEventListener('click', function(e){
+	e.preventDefault();
+	let target = e.target;
+	while(target != this){
+		if(target.classList.contains('courses-btn-detail')){
+			document.querySelector('.modal-content-detail').innerHTML = objCourses[target.dataset.val];
+			return;
+		}
+		target = target.parentElement;
+	}
+
+})
+
+window.addEventListener('keydown', function(e){
+	if (e.keyCode === 27) {
+		while(windowModal.length > 0){
+			disontModal.close();
+		}
+	}
+});
+
+__jsonpFunctionGallery({
+	1: "1.jpg",
+	2: "2.jpg",
+	3: "3.jpg",
+	4: "4.jpg",
+	5: "5.jpg",
+	6: "7.jpg",
+	7: "8.jpg",
+	8: "9.jpg",
+	9: "10.jpg",
+	10: "11.jpg",
+	11: "12.jpg",
+	12: "13.jpg",
+	13: "14.jpg",
+	14: "15.jpg",
+	15: "16.jpg",
+	16: "17.jpg",
+	17: "19.jpg",
+	18: "21.jpg",
+	19: "22.jpg",
+	20: "23.jpg",
+	21: "24.jpg",
+	22: "26.jpg",
+	23: "27.jpg",
+	24: "28.jpg",
+	25: "29.jpg",
+	26: "30.jpg",
+	27: "32.jpg",
+	28: "34.jpg",
+	29: "35.jpg",
+	30: "36.jpg",
+	31: "37.jpg",
+	32: "38.jpg",
+	33: "39.jpg",
+	34: "40.jpg"
+});
+
+function __jsonpFunctionGallery(data){
+	galleryList = data;
+	renderingGallery(galleryList);
+}
+
+let galleryImgActive = null;
+let windowGallery = document.querySelector('.modal-gallery-img');
+
+document.querySelector('.gallery-list').addEventListener('click', function(e){
+	e.preventDefault();
+	let target = e.target;
+	while(target != this){
+		if(target.dataset.img){
+			windowGallery.innerHTML = '';
+			let element = document.createElement('img');
+			element.src = '../public/img/gallery/max/' + galleryList[target.dataset.img];
+			galleryImgActive = +target.dataset.img;
+			windowGallery.appendChild(element);
+			return;
+		}
+		target = target.parentElement;
+	}
+});
+
+/*Убрать выделение кнопки*/
+document.querySelector('.btn-gallery.left').onmousedown = function(e){
+	return false;
+}
+
+document.querySelector('.btn-gallery.right').onmousedown = function(e){
+	return false;
+}
+
+document.querySelector('.btn-gallery.left').addEventListener('click',function(e){
+	e.preventDefault();
+	if(!galleryList[galleryImgActive - 1]) return;
+	else {
+		galleryImgActive = galleryImgActive - 1;
+		windowGallery.querySelector('img').src = '../public/img/gallery/max/' + galleryList[galleryImgActive];
+	}
+});
+
+document.querySelector('.btn-gallery.right').addEventListener('click',function(e){
+	e.preventDefault();
+	if(!galleryList[galleryImgActive + 1]) return;
+	else {
+		galleryImgActive = galleryImgActive + 1;
+		windowGallery.querySelector('img').src = '../public/img/gallery/max/' + galleryList[galleryImgActive];
+	}
+});
+
+function renderingGallery(objPicture){
+	let fragment = document.createDocumentFragment();
+	let containerforGallery = document.querySelector('.gallery-list').firstElementChild;
+
+	for(let cont in objPicture){	//objPicture.forEach(function(cont)
+		let element = getElementForGallery(objPicture[cont], cont);
+    	fragment.appendChild(element);
+    	//arrGallery.push(cont);
+	};
+
+	containerforGallery.appendChild(fragment);
+	let galSlideModal = new Modal('modal-content-gallery', 'gallery-img', 'modal-gallery-window');
+}
+
+/*Отрисовка в шаблоне*/
+function getElementForGallery(data, id){
+	let imgBlock = document.createElement('img');
+	let address = 'public/img/gallery/';
+	imgBlock.src = address + 'min/' + data;
+	imgBlock.dataset.img = id;
+
+	let a = document.createElement('a');
+	a.href = "#0";
+	a.classList.add('gallery-img');
+	a.appendChild(imgBlock);
+	let li = document.createElement('li');
+	li.appendChild(a);
+	return li;
+}
+
+
+//console.log(arrGallery);

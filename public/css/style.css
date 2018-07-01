@@ -15,7 +15,7 @@ p, h2, h3{
 }
 button{
   border: none;
-}
+} 
 .clearfix::after {
 	content: '';
 	display: table;
@@ -123,7 +123,7 @@ button{
     .menu-up-navigation li{
       display: inline-block;
       vertical-align: top;
-      font-size: 21px;
+      font-size: 17px;
       line-height: 25px;
     }
     .menu-up-navigation a{
@@ -440,10 +440,12 @@ button{
       font-size: 0;
       text-align: center;
     }
-    .courses-content-btn{
-      display: inline-block;
+    .courses-content-btn,
+    .courses-btn-detail{
+      display: block;
       width: 122px;
       height: 23px;
+      margin: 20px auto;
       color: #006d6a;
       font-size: 16px;
       line-height: 23px;
@@ -1095,30 +1097,6 @@ footer{
       }
           
 
-/*Всплывающие окна*/
-.modal-content-discount, .modal-content-pricelist, .modal-content-form, .modal-content-choice{
-  display: none;
-  position: fixed;
-  top: 0;
-  bottom: 40px;
-  left: 50%;
-  width: 750px;
-  margin-top: 150px;
-  margin-left: -400px;
-  padding: 50px 80px;
-  color: #000;
-  z-index: 20;
-  background: #f8f3f0 url(../img/backgrond_1_litle.png);
-  box-shadow: 0 30px 50px rgba(0,0,0,.7);
-}
-  .modal-content-choice{
-    margin-top: 25%;
-    bottom: auto;
-  }
-.modal-content-show{
-  display: block;
-  animation: bounce 0.6s;
-}
 .text-offer{
   color: #707070;
   font-size: 11px;
@@ -1134,11 +1112,14 @@ footer{
   90% {transform: translateX(-10px);}
   100% {transform: translateX(0px);}
 }
+/*
   .modal-content-discount .caption,
   .modal-content-pricelist .caption,
   .modal-content-form .caption{
     color: #000;
   }
+*/
+/*
 .modal-content-close{
   position: absolute;
   top: 0;
@@ -1154,6 +1135,7 @@ footer{
   .modal-content-close:hover{
     opacity: 1;
   }
+*/
 
 
 
@@ -1256,21 +1238,6 @@ footer{
 .box-services-arena .box-services-element:last-child{
   margin-bottom: 15px;
 }
-.form-form{
-  position: relative;
-  width: 100%;
-  height: 62%;
-  overflow: hidden;
-}
-.modal-content-form form{
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 94%;
-  padding-right: 6%;
-  overflow-y: scroll;
-}
 .modal-content-form input{
   width: 95.5%;
   margin-bottom: 20px;
@@ -1286,14 +1253,14 @@ footer{
     border: 1px solid #17a09e;
   }
   .modal-content-form .btn-forum{
-    clear: both;
-    width: 100%;
+    display: block;
     font-size: 14px;
     line-height: 18px;
     color: #fff;
     background: #17a09e;
     border: none;
-    padding: 16px 0;
+    padding: 16px 40px;
+    margin: 0 auto;
     cursor: pointer;
   }
 
@@ -1350,58 +1317,25 @@ footer{
     cursor: pointer;
   }
 
-
-/*Ползунок*/
 .window-block{
-  position: relative;
-  width: 100%;
-  height: 77%;
-  margin: 0 auto;
-  padding-right: 25px; 
-  overflow:  hidden;
+  color: #000;
 }
-
-.services-modal-list{
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 20px;
-  transition: top 0.2s ease-in-out;
-  overflow-y: scroll; 
-}
-
-
-
-/*Хочу скидку*/
-
-.stock-window{
-  position: relative;
-  height: 77%;
-  width: 100%;
-  overflow: hidden;
-}
-  .stock-list{
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    -webkit-transition: top .2s ease-in-out;
-    -o-transition: top .2s ease-in-out;
-    -moz-transition: top .2s ease-in-out;
-    transition: top .2s ease-in-out;
-    overflow-y: scroll;
+  .services-block-subtitle{
+    font-weight: 900;
   }
 
+/*
 .modal-content-discount{
   padding: 40px 25px; 
   min-width: 430px;
 }
+*/
+/*
 .modal-content-discount .caption{
   font-size: 30px;
   line-height: 36px;
 }
+*/
   .stock{
     margin-bottom: 15px;
     color: #000;
@@ -1486,6 +1420,176 @@ footer{
           background: url(../img/star-icon.png) repeat-x left center;
         }
 
+
+/*Модальные окна*/
+
+/*Всплывающие окна*/
+
+.modal{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  overflow: auto;
+  z-index: 10;
+}
+.modal-two{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  overflow: auto;
+  z-index: 15;
+}
+/*
+.modal-content-gallery .gallery-img{
+  
+}*/
+.modal-content-gallery .gallery-img img{
+  width: 100%;
+}
+.modal-content-gallery .gallery-list ul{
+  display: block;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  overflow: hidden;
+}
+  .modal-content-gallery .gallery-list li{
+    display: block;
+    float: left;
+    width: 23.5%;
+    margin-right: 2%;
+  }
+    .modal-content-gallery .gallery-list li:nth-child(4n){
+      margin-right: 0;
+    }
+    .modal-content-gallery .gallery-list a{
+      display: block;
+      text-align: center;
+    }
+      .modal-content-gallery img{
+        width: 100%;
+      }
+
+/*
+.modal-content-discount, .modal-content-pricelist, .modal-content-form, .modal-content-choice, .modal-content-choice{
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 40px;
+  left: 50%;
+  width: 750px;
+  margin-top: 150px;
+  margin-left: -400px;
+  padding: 50px 80px;
+  color: #000;
+  z-index: 20;
+  
+  
+}
+*/
+/*
+  .modal-content-choice{
+    margin-top: 25%;
+    bottom: auto;
+  }
+*/
+.modal-content-show{
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-content-discount, .modal-content-pricelist, .modal-content-form, .modal-content-gallery,
+.modal-content-detail{
+  display: none;
+  width: 80%;
+  padding: 40px;
+  margin: 100px auto;
+  min-width: 320px;
+  background: #f8f3f0 url(../img/backgrond_1_litle.png);
+  box-shadow: 0 30px 50px rgba(0,0,0,.7);
+  max-width: 1100px;
+}
+
+.modal-content-choice{
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 40px;
+  margin-left: -233px;
+  background: #f8f3f0 url(../img/backgrond_1_litle.png);
+  box-shadow: 0 30px 50px rgba(0,0,0,.7);
+}
+  .modal-content-choice button{
+    padding: 0 40px;
+    cursor: pointer;
+  }
+.modal-gallery-window{
+  display: none;
+  position: relative;
+  margin: 100px auto;
+  min-width: 320px;
+  max-width: 800px;
+  padding: 0;
+  box-shadow: 0 30px 50px rgba(0,0,0,.7);
+}
+
+.modal-content-show{
+  display: block;
+  animation: bounce 0.6s;
+}
+  .modal .caption{
+    color: #000;
+  }
+.modal-close{
+  position: absolute;
+  top: 60px;
+  right: 7%;
+  font-size: 0;
+  background: url(../img/Cross.png) no-repeat center;
+  width: 21px;
+  height: 21px;
+  cursor: pointer;
+}
+
+.modal-gallery-window img{
+  display: block;
+  width: 100%;
+}
+  .btn-gallery{
+    position: absolute;
+    top: 50%;
+    margin-top: -40px;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    border: 0;
+    font-size: 60px;
+    line-height: 80px;
+    color: #fff;
+    opacity: 0.4;
+    cursor: pointer;
+  }
+    .btn-gallery:hover{
+      opacity: 0.9;
+    }
+    .btn-gallery.left{
+      left: 40px;
+    }
+    .btn-gallery.right{
+      right: 40px;
+    }
+
+.modal-content-detail{
+  color: #000;
+}
+
 @media (max-width: 1145px){
   .about-us-block-img{
     width: 200px;
@@ -1521,7 +1625,7 @@ footer{
 }
 
 
-@media (max-width: 1030px){
+@media (max-width: 1060px){
   
   .menu-up-btn{
     display: block;
@@ -1633,45 +1737,6 @@ footer{
       line-height: 22px;
     }
 
-.modal-content-discount, .modal-content-pricelist, .modal-content-form, .modal-content-choice{
-  top: 40px;
-  left: 0;
-  right: 0;
-  bottom: 40px;
-  width: auto;
-  height: auto;
-  margin: 0;
-  padding: 30px;
-  box-shadow: none;
-  min-width: 420px;
-}
-  .modal-content-choice{
-    margin-top: 35%;
-    bottom: auto;
-  }
-.modal-content-show{
-  display: block;
-  animation: bounce 0.6s;
-}
-  .modal-content-discount .caption,
-  .modal-content-pricelist .caption,
-  .modal-content-form .caption{
-    color: #000;
-  }
-.modal-content-close{
-  position: absolute;
-  top: -40px;
-  right: 0;
-}
-.stock-window{
-  height: 77%;
-}
-
-.window-block{
-  height: 72%;
-}
-
-}
 
 @media (max-width: 990px){
 
@@ -2085,3 +2150,4 @@ footer{
     top: 70px;
   }
 }
+

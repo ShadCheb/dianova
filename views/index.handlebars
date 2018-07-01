@@ -2,12 +2,13 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Permanent Studio</title>
 	<link rel="stylesheet" href="public/css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
-
+ 
 
 <!--Шапка-->
 <div class="menu-up">
@@ -18,12 +19,13 @@
 				<img src="public/img/logo.png" alt="Permanent Studio">
 				<p>Margarita Dianova</p>
 				<p>permanent studio</p>
-				<a href="index.html" class="logo-link"></a>
+				<a href="/" class="logo-link"></a>
 		</div>
 
 		<button class="menu-up-btn"></button>
 		<div class="menu-up-navigation">
 			<ul>
+				<li><a href="#0" class="gallery" id="gallery">Галерея</a></li>
 				<li><a href="#0" id="courses">Курсы</a></li>
 				<li><a href="#0" id="services">Услуги</a></li>
 				<li><a href="#0" id="about-us">О нас</a></li>
@@ -128,8 +130,11 @@
 					<div class="courses-content-text">
 						<div class="courses-content-h2"><h2></h2><div class="line-h2-litle"></div></div>
 						<div class="courses-content-intended"><p></p></div>
-						<div class="courses-content-description"><p></p></div>
-						<div class="courses-content-botton"><button class="courses-content-btn">Записаться</button></div>
+						<!--<div class="courses-content-description"><p></p></div>-->
+						<div class="courses-content-botton">
+							<button class="courses-btn-detail">Подробнее</button>
+							<button class="courses-content-btn">Записаться</button>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -516,7 +521,7 @@
 			</div>
 
 			<div class="contacts-map">
-				
+
 				<div class="contacts-map-text">
 					<div class="map-text-border">
 						<p>Рады видеть вас у себя в студии с пн-вск с 11:00 до 22:00</p>
@@ -534,276 +539,322 @@
 <footer class="clearfix">
 	<div class="footer-block">
 		<p>Следите занашими акциями в социальных сетях:</p>
-		<div class="footer-block-seti seti-vk"></div>
-		<div class="footer-block-seti seti-i"></div>
+		<a href="https://vk.com/club23225760" class="footer-block-seti seti-vk"></a>
+		<a href="https://www.instagram.com/dianovapermanent/" class="footer-block-seti seti-i"></a>
 	</div>
 </footer>
 
+<div class="modal" hidden>
 
-<div class="modal-content-discount">
-	<div class="modal-content-close">
-		Закрыть
-	</div>
-	
-	<div class="caption">
-		<h2>Пакет услуг</h2>
-	</div>
-
-	<div class="stock-window">
-		<div class="stock-list">
-			<div class="stock">
-				<div class="stock-name">
-					<p>Пакет #1</p>
-				</div>
-				<div class="stock-option">
-					<div class="stock-option-header">Перманент 2 зон в один день:</div>
-					<div class="stock-option-flex">
-						<div class="stock-option-list">Перманент бровей и век</div>
-						<div class="stock-option-ellipsis"></div>
-					</div>
-
-					<div class="stock-option-flex">
-						<div class="stock-option-list">Перманент бровей и губ</div>
-						<div class="stock-option-ellipsis"></div>
-					</div>
-
-					<div class="stock-option-flex">
-						<div class="stock-option-list">Перманент век и губ</div>
-						<div class="stock-option-ellipsis"></div>
-					</div>
-				</div>
-				<div class="stock-top-master">
-					<div class="stock-top-master-header"><span class="big-window">Топ-мастер</span><span class="litle-window">&nbsp</span></div>
-					<div class="stock-top-master-list">18000р <span class="big-window">(экономия 2000р)</span></div>
-					<div class="stock-top-master-list">18000р <span class="big-window">(экономия 2000р)</span></div>
-					<div class="stock-top-master-list">18000р <span class="big-window">(экономия 2000р)</span></div>
-				</div>
-				<div class="stock-master">
-					<div class="stock-master-header"><span class="big-window">Мастер</span><span class="litle-window">&nbsp</span></div>
-					<div class="stock-master-list">10800р <span class="big-window">(экономия 1200р)</span></div>
-					<div class="stock-master-list">10800р <span class="big-window">(экономия 1200р)</span></div>
-					<div class="stock-master-list">10800р <span class="big-window">(экономия 1200р)</span></div>
-				</div>
-			</div>
-
-			<div class="stock">
-				<div class="stock-name">
-					<p>Пакет #2</p>
-				</div>
-				<div class="stock-option">
-					<div class="stock-option-header">Перманент 3 зон в один день:</div>
-					<div class="stock-option-flex">
-						<div class="stock-option-list">Перманент бровей, век и губ</div>
-						<div class="stock-option-ellipsis"></div>
-					</div>
-				</div>
-				<div class="stock-top-master">
-					<div class="stock-top-master-header"><span class="big-window">Топ-мастер</span><span class="litle-window">&nbsp</span></div>
-					<div class="stock-top-master-list">24000р <span class="big-window">(экономия 6000р)</span></div>
-				</div>
-				<div class="stock-master">
-					<div class="stock-master-header"><span class="big-window">Мастер</span><span class="litle-window">&nbsp</span></div>
-					<div class="stock-master-list">14500р <span class="big-window">(экономия 3500р)</span></div>
-				</div>
-			</div>
-
-			<div class="stock">
-				<div class="stock-name">
-					<p>Пакет #3</p>
-				</div>
-				<div class="stock-option">
-					<div class="stock-option-header">&nbsp</div>
-					<div class="stock-option-flex">
-						<div class="stock-option-list">Перманент бровей + ботокс для ресниц</div>
-						<div class="stock-option-ellipsis"></div>
-					</div>
-				</div>
-				<div class="stock-top-master">
-					<div class="stock-top-master-header"><span class="big-window">Топ-мастер</span><span class="litle-window">&nbsp</span></div>
-					<div class="stock-top-master-list">11500р <span class="big-window">(экономия 1000р)</span></div>
-				</div>
-				<div class="stock-master">
-					<div class="stock-master-header"><span class="big-window">Мастер</span><span class="litle-window">&nbsp</span></div>
-					<div class="stock-master-list">7500р <span class="big-window">(экономия 1000р)</span></div>
-				</div>
-			</div>
-
-			<div class="stock">
-				<div class="stock-name">
-					<p>Пакет #4</p>
-				</div>
-				<div class="stock-option">
-					<div class="stock-option-header">&nbsp</div>
-					<div class="stock-option-flex">
-						<div class="stock-option-list">Наращивание ресниц + оформление бровей</div>
-						<div class="stock-option-ellipsis"></div>
-					</div>
-				</div>
-				<div class="stock-top-master">
-					<div class="stock-top-master-header"><span class="big-window">Топ-мастер</span><span class="litle-window">&nbsp</span></div>
-					<div class="stock-top-master-list">скидка 500р</div>
-				</div>
-				<div class="stock-master">
-					<div class="stock-master-header"><span class="big-window">Мастер</span><span class="litle-window">&nbsp</span></div>
-					<div class="stock-master-list">скидка 500р</div>
-				</div>
-			</div>
-
-			<div class="stock">
-				<div class="stock-name">
-					<p>Пакет #5</p>
-				</div>
-				<div class="stock-option">
-					<div class="stock-option-header">&nbsp</div>
-					<div class="stock-option-flex">
-						<div class="stock-option-list">Перманент брови + ресницы классика</div>
-						<div class="stock-option-ellipsis"></div>
-					</div>
-				</div>
-				<div class="stock-top-master">
-					<div class="stock-top-master-header"><span class="big-window">Топ-мастер</span><span class="litle-window">&nbsp</span></div>
-					<div class="stock-top-master-list">11700р <span class="big-window">(экономия 1000р)</span></div>
-				</div>
-				<div class="stock-master">
-					<div class="stock-master-header"><span class="big-window">Мастер</span><span class="litle-window">&nbsp</span></div>
-					<div class="stock-master-list">7700р <span class="big-window">(экономия 1000р)</span></div>
-				</div>
-			</div>
-
-			<div class="stock">
-				<div class="stock-name">
-					<p>Пакет #6</p>
-				</div>
-				<div class="stock-option">
-					<div class="stock-option-header">&nbsp</div>
-					<div class="stock-option-flex">
-						<div class="stock-option-list">Перманент губ + ресницы классика</div>
-						<div class="stock-option-ellipsis"></div>
-					</div>
-				</div>
-				<div class="stock-top-master">
-					<div class="stock-top-master-header"><span class="big-window">Топ-мастер</span><span class="litle-window">&nbsp</span></div>
-					<div class="stock-top-master-list">11700р <span class="big-window">(экономия 1000р)</span></div>
-				</div>
-				<div class="stock-master">
-					<div class="stock-master-header"><span class="big-window">Мастер</span><span class="litle-window">&nbsp</span></div>
-					<div class="stock-master-list">7700р <span class="big-window">(экономия 1000р)</span></div>
-				</div>
-			</div>
-
-			<div class="stock">
-				<div class="stock-name">
-					<p>Пакет #7</p>
-				</div>
-				<div class="stock-option">
-					<div class="stock-option-header">Депиляция/шугаринг:</div>
-					<div class="stock-option-flex">
-						<div class="stock-option-list">Ноги + бикини</div>
-						<div class="stock-option-ellipsis"></div>
-					</div>
-					<div class="stock-option-flex">
-						<div class="stock-option-list">Ноги + руки + бикини</div>
-						<div class="stock-option-ellipsis"></div>
-					</div>
-				</div>
-				<div class="stock-top-master">
-					<div class="stock-option-header">&nbsp</div>
-					<div class="stock-top-master-list">2500р</div>
-					<div class="stock-top-master-list">2000р</div>
-				</div>
-			</div>
-
-			<div class="stock-block">
-			</div>
-		</div>
-	</div>
-	<div class="text-offer">Все цены на сайте приведены как справочная информация и не являются публичной офертой, определенной положением статьи 437 Гражданского кодекса Российской Федерации и могут быть изменены влюбое время без предупреждения. Для получения подробной информации о стоимости услуг звоните в салон.</div>
-</div>
-
-
-<div class="modal-content-pricelist">
-	<div class="modal-content-close">
+	<div class="modal-close">
 		Закрыть
 	</div>
 
-	<div class="caption">
-		<h2>Прайс-лист</h2>
-	</div>
-
-	
-	<div class="window-block">
-		<div class="services-modal-list"></div>
-	</div>
-
-	<div class="text-offer">Все цены на сайте приведены как справочная информация и не являются публичной офертой, определенной положением статьи 437 Гражданского кодекса Российской Федерации и могут быть изменены влюбое время без предупреждения. Для получения подробной информации о стоимости услуг звоните в салон.</div>
-
-	<template id="services-template" style="display: none">
-		<div class="services-block"></div>
-		<div class="services-block-caption">
-			<p></p>
-		</div>
+	<div class="modal-content-discount">
 		
-		<div class="services-block-subtitle">
-			<p></p>
+		<div class="caption">
+			<h2>Пакет услуг</h2>
 		</div>
 
-		<div class="services-block-list"></div>
+		<div class="stock-window">
+			<div class="stock-list">
+				<div class="stock">
+					<div class="stock-name">
+						<p>Пакет #1</p>
+					</div>
+					<div class="stock-option">
+						<div class="stock-option-header">Перманент 2 зон в один день:</div>
+						<div class="stock-option-flex">
+							<div class="stock-option-list">Перманент бровей и век</div>
+							<div class="stock-option-ellipsis"></div>
+						</div>
 
-			<div class="services-block-elem">
-				<div class="services-elem-service">
-					<p></p>
+						<div class="stock-option-flex">
+							<div class="stock-option-list">Перманент бровей и губ</div>
+							<div class="stock-option-ellipsis"></div>
+						</div>
+
+						<div class="stock-option-flex">
+							<div class="stock-option-list">Перманент век и губ</div>
+							<div class="stock-option-ellipsis"></div>
+						</div>
+					</div>
+					<div class="stock-top-master">
+						<div class="stock-top-master-header"><span class="big-window">Топ-мастер</span><span class="litle-window">&nbsp</span></div>
+						<div class="stock-top-master-list">18000р <span class="big-window">(экономия 2000р)</span></div>
+						<div class="stock-top-master-list">18000р <span class="big-window">(экономия 2000р)</span></div>
+						<div class="stock-top-master-list">18000р <span class="big-window">(экономия 2000р)</span></div>
+					</div>
+					<div class="stock-master">
+						<div class="stock-master-header"><span class="big-window">Мастер</span><span class="litle-window">&nbsp</span></div>
+						<div class="stock-master-list">10800р <span class="big-window">(экономия 1200р)</span></div>
+						<div class="stock-master-list">10800р <span class="big-window">(экономия 1200р)</span></div>
+						<div class="stock-master-list">10800р <span class="big-window">(экономия 1200р)</span></div>
+					</div>
 				</div>
-				<div class="services-elem-ellipsis"></div>
-				<button class="services-elem-btn">
-					<span class="big-window">Записаться</span><span class="litle-window">+</span>
-				</button>
-				<div class="services-elem-price">
-					<p></p>
+
+				<div class="stock">
+					<div class="stock-name">
+						<p>Пакет #2</p>
+					</div>
+					<div class="stock-option">
+						<div class="stock-option-header">Перманент 3 зон в один день:</div>
+						<div class="stock-option-flex">
+							<div class="stock-option-list">Перманент бровей, век и губ</div>
+							<div class="stock-option-ellipsis"></div>
+						</div>
+					</div>
+					<div class="stock-top-master">
+						<div class="stock-top-master-header"><span class="big-window">Топ-мастер</span><span class="litle-window">&nbsp</span></div>
+						<div class="stock-top-master-list">24000р <span class="big-window">(экономия 6000р)</span></div>
+					</div>
+					<div class="stock-master">
+						<div class="stock-master-header"><span class="big-window">Мастер</span><span class="litle-window">&nbsp</span></div>
+						<div class="stock-master-list">14500р <span class="big-window">(экономия 3500р)</span></div>
+					</div>
+				</div>
+
+				<div class="stock">
+					<div class="stock-name">
+						<p>Пакет #3</p>
+					</div>
+					<div class="stock-option">
+						<div class="stock-option-header">&nbsp</div>
+						<div class="stock-option-flex">
+							<div class="stock-option-list">Перманент бровей + ботокс для ресниц</div>
+							<div class="stock-option-ellipsis"></div>
+						</div>
+					</div>
+					<div class="stock-top-master">
+						<div class="stock-top-master-header"><span class="big-window">Топ-мастер</span><span class="litle-window">&nbsp</span></div>
+						<div class="stock-top-master-list">11500р <span class="big-window">(экономия 1000р)</span></div>
+					</div>
+					<div class="stock-master">
+						<div class="stock-master-header"><span class="big-window">Мастер</span><span class="litle-window">&nbsp</span></div>
+						<div class="stock-master-list">7500р <span class="big-window">(экономия 1000р)</span></div>
+					</div>
+				</div>
+
+				<div class="stock">
+					<div class="stock-name">
+						<p>Пакет #4</p>
+					</div>
+					<div class="stock-option">
+						<div class="stock-option-header">&nbsp</div>
+						<div class="stock-option-flex">
+							<div class="stock-option-list">Наращивание ресниц + оформление бровей</div>
+							<div class="stock-option-ellipsis"></div>
+						</div>
+					</div>
+					<div class="stock-top-master">
+						<div class="stock-top-master-header"><span class="big-window">Топ-мастер</span><span class="litle-window">&nbsp</span></div>
+						<div class="stock-top-master-list">скидка 500р</div>
+					</div>
+					<div class="stock-master">
+						<div class="stock-master-header"><span class="big-window">Мастер</span><span class="litle-window">&nbsp</span></div>
+						<div class="stock-master-list">скидка 500р</div>
+					</div>
+				</div>
+
+				<div class="stock">
+					<div class="stock-name">
+						<p>Пакет #5</p>
+					</div>
+					<div class="stock-option">
+						<div class="stock-option-header">&nbsp</div>
+						<div class="stock-option-flex">
+							<div class="stock-option-list">Перманент брови + ресницы классика</div>
+							<div class="stock-option-ellipsis"></div>
+						</div>
+					</div>
+					<div class="stock-top-master">
+						<div class="stock-top-master-header"><span class="big-window">Топ-мастер</span><span class="litle-window">&nbsp</span></div>
+						<div class="stock-top-master-list">11700р <span class="big-window">(экономия 1000р)</span></div>
+					</div>
+					<div class="stock-master">
+						<div class="stock-master-header"><span class="big-window">Мастер</span><span class="litle-window">&nbsp</span></div>
+						<div class="stock-master-list">7700р <span class="big-window">(экономия 1000р)</span></div>
+					</div>
+				</div>
+
+				<div class="stock">
+					<div class="stock-name">
+						<p>Пакет #6</p>
+					</div>
+					<div class="stock-option">
+						<div class="stock-option-header">&nbsp</div>
+						<div class="stock-option-flex">
+							<div class="stock-option-list">Перманент губ + ресницы классика</div>
+							<div class="stock-option-ellipsis"></div>
+						</div>
+					</div>
+					<div class="stock-top-master">
+						<div class="stock-top-master-header"><span class="big-window">Топ-мастер</span><span class="litle-window">&nbsp</span></div>
+						<div class="stock-top-master-list">11700р <span class="big-window">(экономия 1000р)</span></div>
+					</div>
+					<div class="stock-master">
+						<div class="stock-master-header"><span class="big-window">Мастер</span><span class="litle-window">&nbsp</span></div>
+						<div class="stock-master-list">7700р <span class="big-window">(экономия 1000р)</span></div>
+					</div>
+				</div>
+
+				<div class="stock">
+					<div class="stock-name">
+						<p>Пакет #7</p>
+					</div>
+					<div class="stock-option">
+						<div class="stock-option-header">Депиляция/шугаринг:</div>
+						<div class="stock-option-flex">
+							<div class="stock-option-list">Ноги + бикини</div>
+							<div class="stock-option-ellipsis"></div>
+						</div>
+						<div class="stock-option-flex">
+							<div class="stock-option-list">Ноги + руки + бикини</div>
+							<div class="stock-option-ellipsis"></div>
+						</div>
+					</div>
+					<div class="stock-top-master">
+						<div class="stock-option-header">&nbsp</div>
+						<div class="stock-top-master-list">2500р</div>
+						<div class="stock-top-master-list">2000р</div>
+					</div>
+				</div>
+
+				<div class="stock-block">
 				</div>
 			</div>
-	</template>
+		</div>
+		<div class="text-offer">Все цены на сайте приведены как справочная информация и не являются публичной офертой, определенной положением статьи 437 Гражданского кодекса Российской Федерации и могут быть изменены влюбое время без предупреждения. Для получения подробной информации о стоимости услуг звоните в салон.</div>
+	</div>
 
+	<div class="modal-content-pricelist">
+
+		<div class="caption">
+			<h2>Прайс-лист</h2>
+		</div>
+
+		
+		<div class="window-block">
+			<div class="services-modal-list"></div>
+		</div>
+
+		<div class="text-offer">Все цены на сайте приведены как справочная информация и не являются публичной офертой, определенной положением статьи 437 Гражданского кодекса Российской Федерации и могут быть изменены влюбое время без предупреждения. Для получения подробной информации о стоимости услуг звоните в салон.</div>
+
+		<template id="services-template">
+			<div class="services-block"></div>
+			<div class="services-block-caption">
+				<p></p>
+			</div>
+			
+			<div class="services-block-subtitle">
+				<p></p>
+			</div>
+
+			<div class="services-block-list"></div>
+
+				<div class="services-block-elem">
+					<div class="services-elem-service">
+						<p></p>
+					</div>
+					<div class="services-elem-ellipsis"></div>
+					<button class="services-elem-btn">
+						<span class="big-window">Записаться</span><span class="litle-window">+</span>
+					</button>
+					<div class="services-elem-price">
+						<p></p>
+					</div>
+				</div>
+		</template>
+	</div>
+
+	<div class="modal-content-form">
+		<div class="caption">
+			<h2>Запись</h2>
+		</div>
+		<div class="clarification-caption">Заполните форму и мы с Вами обязательно свяжимся для подтверждения записи</div>
+		<div class="form-form">
+			<form method="post" action="/index">
+				<div class="box-services-arena"></div>
+				<input type="text" class="client-name" name="name" placeholder="Имя" required>
+				<input type="text" class="client-phone" name="phone" placeholder="Номер телефона" required>
+				<input type="text" class="client-mail" name="email" placeholder="Электронная почта">
+				<input type="date" name="date" value="" placeholder="Дата">
+				<input type="time" name="time" value="" placeholder="Время">
+				<input type="textarea" name="serv" style="display: none;">
+
+				<button type="submit" class="btn-forum">Отправить</button>
+			</form>
+		</div>
+		<div class="text-offer">Все цены на сайте приведены как справочная информация и не являются публичной офертой, определенной положением статьи 437 Гражданского кодекса Российской Федерации и могут быть изменены влюбое время без предупреждения. Для получения подробной информации о стоимости услуг звоните в салон.</div>
+		{{msg}}
+	</div>
+
+	<div class="modal-content-gallery">
+
+		<div class="gallery-list">
+			<ul><!--
+				<li><a href="#0" class="gallery-img"><img src="public/img/gallery/min/1.jpg" data-img="1"></a></li>
+				<li><a href="#0" class="gallery-img"><img src="public/img/gallery/min/2.jpg" data-img="2"></a></li>
+				<li><a href="#0" class="gallery-img"><img src="public/img/gallery/min/3.jpg" data-img="3"></a></li>
+				<li><a href="#0" class="gallery-img"><img src="public/img/gallery/min/4.jpg" data-img="4"></a></li>
+				<li><a href="#0" class="gallery-img"><img src="public/img/gallery/min/5.jpg" data-img="5"></a></li>
+				<li><a href="#0" class="gallery-img"><img src="public/img/gallery/min/7.jpg" data-img="7"></a></li>
+				<li><a href="#0" class="gallery-img"><img src="public/img/gallery/min/8.jpg" data-img="8"></a></li>
+				<li><a href="#0" class="gallery-img"><img src="public/img/gallery/min/9.jpg" data-img="9"></a></li>
+				<li><a href="#0" class="gallery-img"><img src="public/img/gallery/min/10.jpg" data-img="10"></a></li>
+				<li><a href="#0" class="gallery-img"><img src="public/img/gallery/min/11.jpg" data-img="11"></a></li>
+				<li><a href="#0" class="gallery-img"><img src="public/img/gallery/min/12.jpg" data-img="12"></a></li>
+				<li><a href="#0" class="gallery-img"><img src="public/img/gallery/min/13.jpg" data-img="13"></a></li>
+				<li><a href="#0" class="gallery-img"><img src="public/img/gallery/min/14.jpg" data-img="14"></a></li>
+				<li><a href="#0" class="gallery-img"><img src="public/img/gallery/min/15.jpg" data-img="15"></a></li>
+				<li><a href="#0" class="gallery-img"><img src="public/img/gallery/min/16.jpg" data-img="16"></a></li>
+				<li><a href="#0" class="gallery-img"><img src="public/img/gallery/min/17.jpg" data-img="17"></a></li>
+				<li><a href="#0" class="gallery-img"><img src="public/img/gallery/min/19.jpg" data-img="19"></a></li>
+				<li><a href="#0" class="gallery-img"><img src="public/img/gallery/min/21.jpg" data-img="21"></a></li>
+				<li><a href="#0" class="gallery-img"><img src="public/img/gallery/min/22.jpg" data-img="22"></a></li>
+				<li><a href="#0" class="gallery-img"><img src="public/img/gallery/min/23.jpg" data-img="23"></a></li>
+				<li><a href="#0" class="gallery-img"><img src="public/img/gallery/min/24.jpg" data-img="24"></a></li>
+				<li><a href="#0" class="gallery-img"><img src="public/img/gallery/min/25.jpg" data-img="25"></a></li>
+				<li><a href="#0" class="gallery-img"><img src="public/img/gallery/min/26.jpg" data-img="26"></a></li>
+				<li><a href="#0" class="gallery-img"><img src="public/img/gallery/min/27.jpg" data-img="27"></a></li>
+				<li><a href="#0" class="gallery-img"><img src="public/img/gallery/min/28.jpg" data-img="28"></a></li>
+				<li><a href="#0" class="gallery-img"><img src="public/img/gallery/min/29.jpg" data-img="29"></a></li>
+				<li><a href="#0" class="gallery-img"><img src="public/img/gallery/min/30.jpg" data-img="30"></a></li>
+				<li><a href="#0" class="gallery-img"><img src="public/img/gallery/min/32.jpg" data-img="32"></a></li>
+				<li><a href="#0" class="gallery-img"><img src="public/img/gallery/min/34.jpg" data-img="34"></a></li>
+				<li><a href="#0" class="gallery-img"><img src="public/img/gallery/min/35.jpg" data-img="35"></a></li>
+				<li><a href="#0" class="gallery-img"><img src="public/img/gallery/min/36.jpg" data-img="36"></a></li>
+				<li><a href="#0" class="gallery-img"><img src="public/img/gallery/min/37.jpg" data-img="37"></a></li>
+				<li><a href="#0" class="gallery-img"><img src="public/img/gallery/min/38.jpg" data-img="38"></a></li>
+				<li><a href="#0" class="gallery-img"><img src="public/img/gallery/min/39.jpg" data-img="39"></a></li>
+				<li><a href="#0" class="gallery-img"><img src="public/img/gallery/min/40.jpg" data-img="40"></a></li>
+			-->
+			</ul>
+		</div>
+	</div>
+
+	<div class="modal-content-detail">
+		 
+	</div>
 </div>
 
 
-<div class="modal-content-form">
-	<div class="modal-content-close">
+<div class="modal-two" hidden>
+	<div class="modal-close">
 		Закрыть
 	</div>
-
-	<div class="caption">
-		<h2>Запись</h2>
-	</div>
-	<div class="clarification-caption">Заполните форму и мы с Вами обязательно свяжимся для подтверждения записи</div>
-	<div class="form-form">
-		<form method="post" action="/index">
-			<div class="box-services-arena"></div>
-			<input type="text" class="client-name" name="name" placeholder="Имя" required>
-			<input type="text" class="client-phone" name="phone" placeholder="Номер телефона" required>
-			<input type="text" class="client-mail" name="email" placeholder="Электронная почта">
-			<input type="date" name="date" value="" placeholder="Дата">
-			<input type="time" name="time" value="" placeholder="Время">
-			<input type="textarea" name="serv" style="display: none;">
-
-			<button type="submit" class="btn-forum">Отправить</button>
-		<form>
-	</div>
-	<div class="text-offer">Все цены на сайте приведены как справочная информация и не являются публичной офертой, определенной положением статьи 437 Гражданского кодекса Российской Федерации и могут быть изменены влюбое время без предупреждения. Для получения подробной информации о стоимости услуг звоните в салон.</div>
-	{{msg}}
-
-</div>
-
-
-<div class="modal-content-choice"> 
-	<div class="modal-content-close">
-		Закрыть
+	<div class="modal-content-choice"> 
+		<div class="choice-block">
+			<button class="btn-add-service">Добавить</button>
+			<button class="btn-form">Оформить</button>
+		</div>
 	</div>
 
-	<div class="choice-block">
-		<button class="btn-add-service">Добавить</button>
-		<button class="btn-form">Оформить</button>
+	<div class="modal-gallery-window">
+		<div class="modal-gallery-img"></div>
+		<button class="btn-gallery left"><</button>
+		<button class="btn-gallery right">></button>
 	</div>
-	
 </div>
 
 
@@ -814,7 +865,6 @@
 	</div>
 </template>
 
-<div class="overlay"></div>
 
 <script src="public/js/js.js"></script>
 

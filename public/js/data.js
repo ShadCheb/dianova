@@ -1,121 +1,280 @@
 __jsonpFunction([{
   "category": "brows",
   "img": "public/img/service_1.jpg",
-  "name": "Построение идеальных бровей",
-  "durability": "1 день",
+  "name": "БАЗОВЫЙ КУРС - КЛАССИЧЕСКОЕ НАРАЩИВАНИЕ РЕСНИЦ.ИНТЕНСИВ ",
+  "durability": "2 дня",
   "price": "10 000р",
   "intended": "Для начинающих",
   "id": "brows-course-1",
-  "description": "Lorem ipsum dolor sit amet,   consectetur adipisicing elit. Vitae deleniti,  reiciendis molestias id harum, magnam nulla quaerat  quod praesentium, quos sequi? Laudantium, nisi tempora accusamus, aliquam quisquam vel. Nihil, laborum."
+  "description": "<p>Преподаватель Маргарита Дианова</p>\
+                  <p>Длительность: 2 дня</p>\
+      <h2>ТЕОРЕТИЧЕСКАЯ ЧАСТЬ: </h2> \
+      <ul><li>Наращивание ресниц</li> \
+          <li>Фазы роста родной ресницы</li> \
+          <li>Оборудование рабочего места мастера</li> \
+          <li>Здоровье мастера и клиента</li> \
+          <li>Обработка инструментов</li> \
+          <li>Противопоказания процедуры</li> \
+          <li>Обзор материалов для наращивания</li> \
+          <li>Классификация ресниц</li> \
+          <li>Пинцет: прямой и изогнутый</li> \
+          <li>Правильная изоляция нижних ресниц</li> \
+          <li>Обработка ресниц перед процедурой</li> \
+          <li>Правила работы с клеем</li> \
+          <li>Этапы проведения процедуры</li> \
+          <li>Качественное наращивание ресниц (изгиб, толщина, отступ...)</li> \
+          <li>Основы моделирования</li> \
+          <li>Основные ошибки в наращивание ресниц</li> \
+          <li>Коррекция или новое наращивание?</li> \
+          <li>Рекомендации по уходу для клиентов </li> \
+          <li>Коррекция или новое наращивание?</li> \
+          <li>Снятие ресниц</li> \
+          <li>Психология общения с клиентом</li> \
+          <li>Работа с моделями</li> \
+          <li>Приложение для обработки фотографий</li></ul> \
+          <h2>ПРАКТИЧЕСКАЯ ЧАСТЬ:</h2> \
+          <ul><li>Ответы на все возникающие вопросы в процессе работы</li> \
+          <li>Индивидуальная помощь в подборе пинцета</li> \
+          <li>Постановка руки</li> \
+          <li>Отработка на модели</li> \
+          <li>Выдача сертификата</li> \
+          <li>Поддержка после курса </li> \
+      </ul>"
 },
 {
   "category": "brows",
   "img": "public/img/service_1.jpg",
-  "name": "Микроблейдинг бровей",
+  "name": "КУРС - ОБЪЕМНОЕ НАРАЩИВАНИЕ РЕСНИЦ 2-3D",
   "durability": "1 день",
   "price": "10 000р",
   "intended": "Для начинающих",
   "id": "brows-course-2",
-  "description": "Lorem ipsum dolor sit amet,   consectetur adipisicing elit. Vitae deleniti,  reiciendis molestias id harum, magnam nulla quaerat  quod praesentium, quos sequi? Laudantium, nisi tempora accusamus, aliquam quisquam vel. Nihil, laborum."
+  "description": "<p>Преподаватель Маргарита Дианова</p>\
+                  <p>Длительность: 1 дня с 11-00 до 20-00</p>\
+                  <h2>ТЕОРЕТИЧЕСКАЯ ЧАСТЬ: </h2> \
+      <ul><li>Профилактика здоровья мастера </li> \
+          <li>Обзор материалов для объемного наращивания ресниц </li> \
+          <li>Оборудование рабочего места мастера</li> \
+          <li>Классификация клеев</li> \
+          <li>Правила работы с клеем</li> \
+          <li>Идеальный пучок</li> \
+          <li>Коррекция близко посаженных глаз</li> \
+          <li>Коррекция далеко посаженных глаз</li> \
+          <li>Аспекты влияющие на носку ресниц</li> \
+          <li>Составление портфолио мастера</li> \
+          <li>Приложения для обработки фотографий</li> \
+      </ul> \
+          <h2>ПРАКТИЧЕСКАЯ ЧАСТЬ:</h2> \
+          <ul><li>Ответы на все возникающие вопросы в процессе работы </li> \
+          <li>Индивидуальная помощь в подборе пинцета</li> \
+          <li>Отработка двойных и тройных пучков</li> \
+          <li>Отработка на модели</li> \
+          <li>Выдача сертификата</li> \
+          <li>Поддержка после курса</li> \
+      </ul>"
 },
 {
   "category": "brows",
   "img": "public/img/service_3.jpg",
-  "name": "Микроблейдинг бровей",
+  "name": "Повышение квалификации по классическому наращиванию",
   "durability": "1 день",
   "price": "10 000р",
-  "intended": "Для начинающих",
+  "intended": "Повышение квалификации",
   "id": "brows-course-3",
-  "description": "Lorem ipsum dolor sit amet,   consectetur adipisicing elit. Vitae deleniti,  reiciendis molestias id harum, magnam nulla quaerat  quod praesentium, quos sequi? Laudantium, nisi tempora accusamus, aliquam quisquam vel. Nihil, laborum."
+  "description": "<p>Занятие направлено на исправление индивидуальных проблем мастера с опытом работы от 3 месяцев. \
+                      Восстановление пробелов в знаниях.</p>\
+                  <p>Преподаватель Маргарита Дианова</p>\
+                  <p>Длительность: 1 дня</p>\
+                  <h2>ТЕОРЕТИЧЕСКАЯ ЧАСТЬ: </h2> \
+      <ul><li>Оборудование рабочего места мастера</li> \
+          <li>Правила выбора пинцета</li> \
+          <li>Эффекты наращивания ресниц</li> \
+          <li>Способы моделирования и коррекции формы глаз</li> \
+          <li>Аспекты влияющие на носку ресниц</li> \
+          <li>Противопоказание к процедуре</li> \
+          <li>Ответы на все вопросы</li> \
+          <li>Психология общения с клиентом</li> \
+      </ul> \
+          <h2>ПРАКТИЧЕСКАЯ ЧАСТЬ:</h2> \
+          <ul><li>Ответы на все возникающие вопросы в процессе работы </li> \
+          <li>Индивидуальная помощь в подборе пинцета</li> \
+          <li>Отработка на модели</li> \
+          <li>Выдача сертификата</li> \
+          <li>Поддержка после курса</li> \
+      </ul>"
 },
 {
   "category": "lashes",
   "img": "public/img/service_4.jpg",
-  "name": "Микроблейдинг век",
-  "durability": "1 день",
-  "price": "10 000р",
+  "name": "МИКРОБЛЕЙДИНГ БРОВЕЙ",
+  "durability": "5 дней",
+  "price": "45 000р",
   "intended": "Для начинающих",
   "id": "lashes-course-1",
-  "description": "Lorem ipsum dolor sit amet,   consectetur adipisicing elit. Vitae deleniti,  reiciendis molestias id harum, magnam nulla quaerat  quod praesentium, quos sequi? Laudantium, nisi tempora accusamus, aliquam quisquam vel. Nihil, laborum."
+  "description": "<p>5 интенсивных дней обучения </p> \
+                  <p>Первые 4 дня - теоретическая часть с отработкой на искусственной коже, пятый день - практическая отработка на моделях.</p> \
+                  <p>Преподаватель Маргарита Дианова</p> \
+                  <p>Длительность: 1 дня</p> \
+                  <h2>Курс для тех, кто:</h2> \
+      <ul><li>Желает обрести одну из самых востребованных профессий в индустрии красоты! </li> \
+          <li>Стремится расширить свои профессиональные навыки! </li> \
+          <li>Жаждет новых знаний и знакомств! </li> \
+          <li>Желает увеличить свой доход имея при этом гибкий график работы!</li> \
+          <li>Хочет быть востребованным специалистом!</li> \
+      </ul> \
+          <h2>Курс включает в себя: </h2> \
+          <p>1 день</p> \
+          <ul><li>Курс построение идеальных бровей. \
+                  Анализ лица. Строение бровей.</li> \
+          <li>Перманентный макияж введение в технику </li> \
+          <li>Правовые аспекты </li> \
+          <li>Соглашение с клиентом</li> \
+          <li>Противопоказания к процедуре</li> \
+          <li>Организация рабочего места</li> \
+          <li>Обзор необходимых материалов для процедуры </li> \
+          <li>Выбор цвета пигментов с учётом цвета кожи</li> \
+          <li>Виды игл и анестезии</li> \
+          <li>Цветовой круг, колористика</li> \
+          <li>Стерилизация инструментов</li> \
+      </ul> \
+      </ul> \
+          <h2>Домашнее задание:</h2> \
+          <p>2-3-4 день</p> \
+          <ul><li>Пошаговый разбор схемы. Разбираем три схемы: волоски, тень и совмещённая техника: волоски+тень. \
+                  Подбор необходимой техники с учётом типа кожи, состояния натуральных бровей и пожеланий клиента.</li> \
+          <li>Заживление бровей и сроки носки </li> \
+          <li>Коррекция микроблейдинга </li> \
+          <li>Тренируем отрисовку схем на бумаге</li> \
+          <li>Тренируем отрисовку схем на латексе ( искусственная кожа) </li> \
+          <li>Постановка руки </li> \
+          <li>Правильная глубина введения пигмента </li> \
+          <li>Правильное натяжение кожи </li> \
+          <li>Как добиться тончайших волосков</li> \
+          <li>Демонстрация преподавателем работы на модели</li> \
+      </ul> \
+          <h2>Домашнее задание:</h2> \
+          <p>5 день</p> \
+          <ul><li>Практическая отработка на моделях. Две модели</li> \
+      </ul> \
+        <p>В стоимость входит : ручка манипула, 10 игл, тренировочный коврик, 1 пигмент. После курса это остаётся у вас</p> \
+        <p>Информированная поддержка после обучения он-лайн</p> \
+        <p>По окончании выдаётся сертификат</p>"
 },
 {
   "category": "lashes",
   "img": "public/img/service_5.jpg",
-  "name": "Классическое наращивание ресниц",
-  "durability": "1 день",
-  "price": "10 000р",
+  "name": "микроблейдинг повышение",
+  "durability": "2 дня",
+  "price": "20 000р",
   "intended": "Для начинающих",
   "id": "lashes-course-2",
-  "description": "Lorem ipsum dolor sit amet,   consectetur adipisicing elit. Vitae deleniti,  reiciendis molestias id harum, magnam nulla quaerat  quod praesentium, quos sequi? Laudantium, nisi tempora accusamus, aliquam quisquam vel. Nihil, laborum."
+  "description": "<ul><li>пошаговый разбор схемы. Разбираем три схемы: волоски, тень и совмещённая техника: волоски+тень. \
+                Подбор необходимой техники с учётом типа кожи, состояния натуральных бровей и пожеланий клиента \
+                </li> \
+          <li>Заживление бровей и сроки носки</li> \
+          <li>Коррекция микроблейдинга </li> \
+          <li>Тренируем отрисовку схем на бумаге</li> \
+          <li>Тренируем отрисовку схем на латексе (искусственная кожа) </li> \
+          <li>Постановка руки </li> \
+          <li>Правильная глубина введения пигмента </li> \
+          <li>Правильное натяжение кожи </li> \
+          <li>Как добиться тончайших волосков</li> \
+          <li>Демонстрация преподавателем работы на модели</li> \
+      </ul>\
+      <h2>Домашнее задание:</h2> \
+          <p>2 день</p> \
+          <ul><li>Практическая отработка на моделях. Две модели.</li> \
+          </ul>\
+          <p>В стоимость входит : ручка манипула, 5 игл, тренировочный коврик, 1 пигмент. После курса это остаётся у вас.</p>\
+          <p>Информированная поддержка после обучения он-лайн.</p>\
+          <p>По окончании выдаётся сертификат/</p>"
 },
 {
   "category": "lashes",
   "img": "public/img/service_6.jpg",
-  "name": "Объемное наращивание ресниц",
+  "name": "Какой-то курс",
   "durability": "1 день",
-  "price": "10 000р",
+  "price": "20 000р",
   "intended": "Для начинающих",
   "id": "lashes-course-3",
-  "description": "Lorem ipsum dolor sit amet,   consectetur adipisicing elit. Vitae deleniti,  reiciendis molestias id harum, magnam nulla quaerat  quod praesentium, quos sequi? Laudantium, nisi tempora accusamus, aliquam quisquam vel. Nihil, laborum."
+  "description": "<p>Если вы уже владеете ручными техниками татуажа бровей, но хотите усовершенствовать свои знания и навыки - этот курс для вас!</p>\
+        <p>Содержание курса:</p>\
+        <ul><li>идеальная схема отрисовки волосков </li> \
+          <li>Секреты создания ультратонких волосков</li> \
+          <li>Какими пигментами работать</li> \
+          <li>Как сделать так, чтобы эскиз не исчезал</li> \
+          <li>Ключевые ошибки при выполнении процедуры</li> \
+          <li>Постановка руки </li> \
+          <li>Теоретический блок: ответы на любые ваши вопросы</li> \
+          <li>Отработка на модели</li>\
+      </ul>\
+      <p>На время обучения предоставляются все необходимые материалы</p>\
+      <p>После курса вы сможете: Идеально создавать волоски на любых бровях</p>"
 },
 {
   "category": "lashes",
   "img": "public/img/service_7.jpg",
-  "name": "Ламинирование ресниц",
-  "durability": "1 день",
-  "price": "10 000р",
+  "name": "Аппаратный курс полный",
+  "durability": "6 дней",
+  "price": "55 000р",
   "intended": "Для начинающих",
   "id": "lashes-course-4",
-  "description": "Lorem ipsum dolor sit amet,   consectetur adipisicing elit. Vitae deleniti,  reiciendis molestias id harum, magnam nulla quaerat  quod praesentium, quos sequi? Laudantium, nisi tempora accusamus, aliquam quisquam vel. Nihil, laborum."
+  "description": "<p>1 день: курс построения бровей</p>\
+        <p>1 день: курс построения бровей</p>\
+        <p>2 день: теория перманентного макияжа (медицинские аспекты,\
+        правовые аспекты, стерилизация, дезинфекция, материалы для работы,\
+        иглы и их отличие, анестезия, оборудование рабочего место, строение кожи, колористика, пигменты, \
+        противопоказания. Разбор программ для обработки фото. )</p>\
+        <p>3 день: отработка на латексе</p>\
+        <p>4 день: отработка на 2 моделях брови</p>\
+        <p>5 день: отработка на 2 моделях губы</p>\
+        <p>6 день: отработка на 2 моделях веки</p>\
+        <p>6 день: отработка на 2 моделях веки</p>\
+        <p>По окончанию курса выдается сертификат</p>\
+        <p>Информированная поддержка после обучения он-лайн</p>\
+        <p>Все материалы на время обучения предоставляются</p>"
 },
 {
   "category": "lashes",
   "img": "public/img/service_8.jpg",
-  "name": "Классическое + объемное наращивание ресниц",
+  "name": "Макияж для себя",
   "durability": "2 день",
-  "price": "20 000р",
+  "price": "4 000р",
   "intended": "Для начинающих",
   "id": "lashes-course-5",
-  "description": "Lorem ipsum dolor sit amet,   consectetur adipisicing elit. Vitae deleniti,  reiciendis molestias id harum, magnam nulla quaerat  quod praesentium, quos sequi? Laudantium, nisi tempora accusamus, aliquam quisquam vel. Nihil, laborum."
+  "description": "<ul><li>обзор популярных косметических средств необходимых для создания различных макияжей</li> \
+          <li>рекомендации бюджетных марок альтернативных дорогой косметике.\
+            основные базовые схемы нанесения макияжа</li> \
+          <li>трансформация дневного макияжа в вечерний</li> \
+          <li>разбор кистей</li> \
+          <li>хайлайтер \"с чем его едят?\"</li> \
+          <li>образ NUDE</li> \
+          <li>разбор косметички участника</li> \
+          <li>индивидуальная рекомендация</li>\
+          <li>отработка макияжа на себе</li>\
+          <p>продолжительность 4-5 часов</p>\
+          <p>чай, печеньки, отличное настроение, маленькие подарочки гарантированы.</p>\
+      </ul>"
 },
 {
   "category": "lashes",
   "img": "public/img/service_9.jpg",
-  "name": "Аппаратное напыление век",
-  "durability": "2 день",
-  "price": "20 000р",
-  "intended": "Для начинающих",
+  "name": "Курс курс курс",
+  "durability": "4 часа",
+  "price": "6 500р",
+  "intended": "Для группы",
   "id": "lashes-course-6",
-  "description": "Lorem ipsum dolor sit amet,   consectetur adipisicing elit. Vitae deleniti,  reiciendis molestias id harum, magnam nulla quaerat  quod praesentium, quos sequi? Laudantium, nisi tempora accusamus, aliquam quisquam vel. Nihil, laborum."
-},
-{
-  "category": "brows",
-  "img": "public/img/service_10.jpg",
-  "name": "Аппаратное напыление бровей",
-  "durability": "2 день",
-  "price": "20 000р",
-  "intended": "Для начинающих",
-  "id": "brows-course-4",
-  "description": "Lorem ipsum dolor sit amet,   consectetur adipisicing elit. Vitae deleniti,  reiciendis molestias id harum, magnam nulla quaerat  quod praesentium, quos sequi? Laudantium, nisi tempora accusamus, aliquam quisquam vel. Nihil, laborum."
-},
-{
-  "category": "lips",
-  "img": "public/img/service_11.jpg",
-  "name": "Аппаратное напыление губ",
-  "durability": "2 дня",
-  "price": "20 000р",
-  "intended": "Для начинающих",
-  "id": "lips-course-1",
-  "description": "Lorem ipsum dolor sit amet,   consectetur adipisicing elit. Vitae deleniti,  reiciendis molestias id harum, magnam nulla quaerat  quod praesentium, quos sequi? Laudantium, nisi tempora accusamus, aliquam quisquam vel. Nihil, laborum."
-},
-{
-  "category": "all",
-  "img": "public/img/service_12.jpg",
-  "name": "Аппаратное напыление губ, бровей, век",
-  "durability": "6 дней",
-  "price": "20 000р",
-  "intended": "Для начинающих",
-  "id": "all-course-1",
-  "description": "Lorem ipsum dolor sit amet,   consectetur adipisicing elit. Vitae deleniti,  reiciendis molestias id harum, magnam nulla quaerat  quod praesentium, quos sequi? Laudantium, nisi tempora accusamus, aliquam quisquam vel. Nihil, laborum."
+  "description": "<p>Теоретическая часть</p>\
+      <ul><li>Общая информация о процедуре</li> \
+          <li>Инструменты и материалы</li> \
+          <li>Условия хранения и сроки годности </li> \
+          <li>Этапы выполнения процедуры </li> \
+          <li>Инструкция для клиента </li> \
+          <li>Противопоказания</li> \
+      </ul>\
+          <p>Практическая часть. </p>\
+      <ul><li>Демонстрация выполнения процедуры на модели преподавателем </li> \
+          <li>Самостоятельная отработка на модели </li> \
+      </ul>"
 }
 ]);
