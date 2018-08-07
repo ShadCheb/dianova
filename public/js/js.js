@@ -8,20 +8,20 @@ var slideArray = {
 		'arena': document.querySelector('.header-slide-arena'),
 		'width': document.querySelector('.header-slide>ul>li')
 	},
-	'about-us-arena': {
+	/*'about-us-arena': {
 		'left': document.querySelector('.about-us-btn.left'),
 		'right': document.querySelector('.about-us-btn.right'),
 		'arena': document.querySelector('.about-us-block-list'),
 		'width': document.querySelector('.about-us-block-arena')
-	}
+	}*/
 };
 
 
 slideArray['header-slide-content'].right.addEventListener('click', nextSlide);
 slideArray['header-slide-content'].left.addEventListener('click', prevSlide);
-slideArray['about-us-arena'].right.addEventListener('click', nextSlide);
+/*slideArray['about-us-arena'].right.addEventListener('click', nextSlide);
 slideArray['about-us-arena'].left.addEventListener('click', prevSlide);
-
+*/
 var functionClick = slideArray['header-slide-content'].right;
 
 function autoClick(){
@@ -37,10 +37,10 @@ function autoClick(){
 	functionClick.dispatchEvent(clickEvent);
 }
 
-setInterval(autoClick, 6000);
+//setInterval(autoClick, 6000);
 
 if(parseInt(slideArray['header-slide-content'].arena.dataset.current) == 0) slideArray['header-slide-content'].left.style.display = 'none';
-if(parseInt(slideArray['about-us-arena'].arena.dataset.current) == 0) slideArray['about-us-arena'].left.style.display = 'none';
+//if(parseInt(slideArray['about-us-arena'].arena.dataset.current) == 0) slideArray['about-us-arena'].left.style.display = 'none';
 
 function nextSlide(evt){
 	var target = evt.target;
@@ -363,7 +363,7 @@ function renderingBoxServices(){
     	boxServicesTemplate = template.children[0].cloneNode(true);
     }
 
-    includeTextArea.value = '';
+    if(includeTextArea.value) includeTextArea.value = '';
 	boxArena.textContent = '';
 
 
@@ -432,7 +432,7 @@ function renderingServicesHead(bd){
 		current++;
 
 		blockServices.addEventListener('click', decorServices);
-		choiceModal = new Modal('services-block', 'services-elem-btn', 'modal-content-choice');
+		choiceModal = new Modal('services-modal-list', 'services-elem-btn', 'modal-content-choice');
 
 		var list = blockServices.appendChild(servicesBlockList.cloneNode(true));
 
@@ -578,12 +578,12 @@ function deleteServiceInBox(e){
 		renderingBoxServices();
 	}
 }
-/*
+
 menuUpBtn.addEventListener('click', function(e){
 	e.preventDefault();
 	menuUp.classList.toggle('menu-show');
 });
-*/
+
 
 
 //класс Модальное окно
@@ -619,10 +619,10 @@ function Modal(block, btn, modal){
 		}
 	}
 
-	let close = this.modal.parentElement.querySelector('.modal-close');
+	let close = this.modal.querySelector('.modal-close');
 	close.onclick = function(){
 		self.close();
-		return false;	
+		return false; 	
 	};
 
 	Modal.prototype.open = function(){
@@ -654,7 +654,7 @@ document.querySelector('.courses').addEventListener('click', function(e){
 	let target = e.target;
 	while(target != this){
 		if(target.classList.contains('courses-btn-detail')){
-			document.querySelector('.modal-content-detail').innerHTML = objCourses[target.dataset.val];
+			document.querySelector('.detail_text').innerHTML = objCourses[target.dataset.val];
 			return;
 		}
 		target = target.parentElement;
@@ -673,38 +673,35 @@ window.addEventListener('keydown', function(e){
 __jsonpFunctionGallery({
 	1: "1.jpg",
 	2: "2.jpg",
-	3: "3.jpg",
-	4: "4.jpg",
-	5: "5.jpg",
-	6: "7.jpg",
-	7: "8.jpg",
-	8: "9.jpg",
-	9: "10.jpg",
-	10: "11.jpg",
-	11: "12.jpg",
-	12: "13.jpg",
-	13: "14.jpg",
-	14: "15.jpg",
-	15: "16.jpg",
-	16: "17.jpg",
-	17: "19.jpg",
-	18: "21.jpg",
-	19: "22.jpg",
-	20: "23.jpg",
-	21: "24.jpg",
-	22: "26.jpg",
-	23: "27.jpg",
-	24: "28.jpg",
-	25: "29.jpg",
-	26: "30.jpg",
-	27: "32.jpg",
-	28: "34.jpg",
-	29: "35.jpg",
-	30: "36.jpg",
-	31: "37.jpg",
-	32: "38.jpg",
-	33: "39.jpg",
-	34: "40.jpg"
+	3: "4.jpg",
+	4: "5.jpg",
+	5: "7.jpg",
+	6: "8.jpg",
+	7: "9.jpg",
+	8: "10.jpg",
+	9: "11.jpg",
+	10: "12.jpg",
+	11: "13.jpg",
+	12: "14.jpg",
+	13: "15.jpg",
+	14: "16.jpg",
+	15: "17.jpg",
+	16: "19.jpg",
+	17: "21.jpg",
+	18: "22.jpg",
+	19: "23.jpg",
+	20: "24.jpg",
+	21: "26.jpg",
+	22: "27.jpg",
+	23: "28.jpg",
+	24: "29.jpg",
+	25: "30.jpg",
+	26: "32.jpg",
+	27: "34.jpg",
+	28: "35.jpg",
+	29: "36.jpg",
+	30: "37.jpg",
+	31: "38.jpg"
 });
 
 function __jsonpFunctionGallery(data){
