@@ -115,7 +115,7 @@ __jsonpFunctionServices([
     ]
   },
   {
-    "header": "Депиляция/шугаринг дамы",
+    "header": "Депиляция/шугаринг",
     "data": [
       {
         "name": "Глубокое бикини",
@@ -194,71 +194,6 @@ __jsonpFunctionServices([
       }
     ]
   },
-  {
-    "header": "Депиляция/шугаринг господа",
-    "data": [
-      {
-        "name": "Глубокое бикини",
-        "price": "2400",
-        "id": "service_32"
-      },
-      {
-        "name": "Классическое бикини",
-        "price": "1900",
-        "id": "service_33"
-      },
-      {
-        "name": "Ягодицы",
-        "price": "800",
-        "id": "service_34"
-      },
-      {
-        "name": "Подмышки",
-        "price": "600",
-        "id": "service_35"
-      },
-      {
-        "name": "Спина",
-        "price": "1200",
-        "id": "service_36"
-      },
-      {
-        "name": "Грудь",
-        "price": "1200",
-        "id": "service_37"
-      },
-      {
-        "name": "Живот",
-        "price": "1200",
-        "id": "service_38"
-      },
-      {
-        "name": "Ноги полностью",
-        "price": "2300",
-        "id": "service_39"
-      },
-      {
-        "name": "Руки полностью",
-        "price": "1100",
-        "id": "service_40"
-      },
-      {
-        "name": "Руки до локтя",
-        "price": "850",
-        "id": "service_41"
-      },
-      {
-        "name": "Поясница",
-        "price": "700",
-        "id": "service_42"
-      },
-      {
-        "name": "Шея",
-        "price": "450",
-        "id": "service_43"
-      }
-    ]
-  }
 ]);
 
 

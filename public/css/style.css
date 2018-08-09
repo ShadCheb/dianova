@@ -1436,6 +1436,7 @@ footer{
   display: block;
   padding: 0;
   margin: 0;
+  margin-bottom: 20px;
   list-style: none;
   overflow: hidden;
 }
@@ -1455,6 +1456,21 @@ footer{
       .modal-content-gallery img{
         width: 100%;
       }
+  .gallery-btn{
+    text-align: center;
+  }
+  .modal-content-gallery a.btn{
+    display: inline-block;
+    padding: 16px 30px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: none;
+    color: #fff;
+    background: #17a09e;
+    border: none;
+    cursor: pointer;
+  }
 
 .modal-content-show{
   display: block;
@@ -1551,8 +1567,16 @@ footer{
 .detail_text ul{
   list-style: none;
 }
+  .detail_text li{
+    padding-left: 15px;
+    padding-top: 5px; 
+    padding-top: 5px;
+  }
   .detail_text ul>p{
     font-weight: 700;
+  }
+  .detail_text p{
+    padding: 5px 0;
   }
 
 
