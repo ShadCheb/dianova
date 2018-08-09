@@ -785,5 +785,6 @@ function getElementForGallery(data, id){
 	return li;
 }
 
-
-//console.log(arrGallery);
+document.querySelector('.btn-inst').addEventListener('click', function(){
+	window.open('https://www.instagram.com/dianovapermanent_foto/');
+});
