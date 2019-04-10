@@ -208,8 +208,6 @@ function renderContainer(containerToRender){
 
 	container.appendChild(fragment);
 	container.addEventListener('click', addCoursesInForm);
-
-
 }
 
 /*Загрузка данных*/

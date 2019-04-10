@@ -4,27 +4,27 @@ __jsonpFunctionServices([
     "data": [
       {
         "name": "Классическое",
-        "price": "2700",
+        "price": "3000",
         "id": "service_1"
       },
       {
         "name": "Двойной объем",
-        "price": "3000",
+        "price": "3300",
         "id": "service_2"
       },
       {
         "name": "Тройной объем",
-        "price": "3300",
+        "price": "3600",
         "id": "service_3"
       },
       {
         "name": "Четыре объем",
-        "price": "3600",
+        "price": "3900",
         "id": "service_4"
       },
       {
         "name": "Пять и более",
-        "price": "3900",
+        "price": "4100",
         "id": "service_5"
       },
       {
@@ -62,7 +62,7 @@ __jsonpFunctionServices([
           },
           {
             "name": "Межречный татуаж",
-            "price": "7000",
+            "price": "8000",
             "id": "service_11"
           }
         ]
@@ -105,11 +105,11 @@ __jsonpFunctionServices([
             "price": "2000",
             "id": "service_15"
         },
-        {
+        /* {
             "name": "Tatoo Remover",
             "price": "2000",
             "id": "service_16"
-        }
+        } */
       ]
     }
     ]
