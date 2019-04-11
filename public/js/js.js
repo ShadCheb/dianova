@@ -418,6 +418,7 @@ function renderingServicesHead(bd){
 	var current = 0;
 
 	bd.forEach(function(count){
+		console.log(count);
 		var block = element.querySelector('.services-block');
 		var blockServices = containerForList.appendChild(block.cloneNode(true));
 		var servicesBlockCaption = element.querySelector('.services-block-caption');
@@ -447,6 +448,15 @@ function renderingServicesHead(bd){
 			count.data.forEach(function(countUnder){
 				list.appendChild(renderingServicesElement(countUnder));
 			});
+		}
+
+		if ('comment' in count) {
+			let comment =  document.createElement('P');
+
+			comment.classList.add('services-block-comment');
+			comment.textContent = count.comment;
+
+			list.appendChild(comment);
 		}
 	});
 	for(var i = 0; i < servicesCaption.length; i++){

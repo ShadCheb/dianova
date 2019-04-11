@@ -56,14 +56,19 @@ __jsonpFunctionServices([
         "sublitename": "Перманентный макияж глаз",
         "data": [
           {
-            "name": "Стрелки",
+            "name": "Стрелки классические",
             "price": "10000",
             "id": "service_10"
           },
           {
+            "name": "Стрелки с растушевкой",
+            "price": "12000",
+            "id": "service_11"
+          },
+          {
             "name": "Межречный татуаж",
             "price": "8000",
-            "id": "service_11"
+            "id": "service_12"
           }
         ]
       },
@@ -73,7 +78,7 @@ __jsonpFunctionServices([
           {
             "name": "Губы Nude",
             "price": "10000",
-            "id": "service_12"
+            "id": "service_13"
           }
         ]
       },
@@ -83,117 +88,53 @@ __jsonpFunctionServices([
           {
             "name": "Микроблейдинг бровей",
             "price": "10000",
-            "id": "service_13"
+            "id": "service_14"
           },
           {
             "name": "Пудровые брови",
             "price": "10000",
-            "id": "service_14"
+            "id": "service_15"
           }
         ]
       }
-    ]
+    ],
+    "comment": "*Коррекция через месяц -50% от стоимости перманента"
   },
   {
     "header": "Удаление татуажа",
     "subtitle": [
-    {
-      "sublitename": "1 процедура",
-      "data": [
-        {
-            "name": "Лазером",
+      {
+        "sublitename": "1 процедура",
+        "data": [
+          {
+              "name": "Лазером",
+              "price": "2000",
+              "id": "service_16"
+          },
+          {
+            "name": "Удаление ремувером",
             "price": "2000",
-            "id": "service_15"
-        },
-        /* {
-            "name": "Tatoo Remover",
-            "price": "2000",
-            "id": "service_16"
-        } */
-      ]
-    }
-    ]
-  },
-  {
-    "header": "Депиляция/шугаринг",
-    "data": [
-      {
-        "name": "Глубокое бикини",
-        "price": "1200",
-        "id": "service_17"
+            "id": "service_17"
+          }       
+          /* {
+              "name": "Tatoo Remover",
+              "price": "2000",
+              "id": "service_16"
+          } */
+        ]
       },
       {
-        "name": "Классическое бикини",
-        "price": "1000",
-        "id": "service_18"
-      },
-      {
-        "name": "Бикини купальник",
-        "price": "600",
-        "id": "service_19"
-      },
-      {
-        "name": "Ягодицы",
-        "price": "600",
-        "id": "service_20"
-      },
-      {
-        "name": "Подмышки",
-        "price": "400",
-        "id": "service_21"
-      },
-      {
-        "name": "Ноги полностью",
-        "price": "1300",
-        "id": "service_22"
-      },
-      {
-        "name": "Голени (ниже колен)",
-        "price": "700",
-        "id": "service_23"
-      },
-      {
-        "name": "Бедра (выше колен)",
-        "price": "700",
-        "id": "service_24"
-      },
-      {
-        "name": "Руки полностью",
-        "price": "700",
-        "id": "service_25"
-      },
-      {
-        "name": "Руки до локтя",
-        "price": "500",
-        "id": "service_26"
-      },
-      {
-        "name": "Лицо (1 зона)",
-        "price": "250",
-        "id": "service_27"
-      },
-      {
-        "name": "Доп. зона",
-        "price": "300",
-        "id": "service_28"
-      },
-      {
-        "name": "Живот",
-        "price": "700",
-        "id": "service_29"
-      },
-      {
-        "name": "поясница",
-        "price": "600",
-        "id": "service_30"
-      },
-      {
-        "name": "Спина",
-        "price": "1000",
-        "id": "service_31"
+        "sublitename": "5 процедур",
+        "data": [
+          {
+              "name": "Лазером",
+              "price": "7500",
+              "id": "service_18"
+          }
+        ]
       }
     ]
-  },
+  }
 ]);
 
 

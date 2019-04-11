@@ -1226,6 +1226,11 @@ footer{
     opacity: 1;
     height: auto;
   }
+  .services-block-comment {
+    margin: 10px 0;
+    font-size: 12px;
+    color: #666666;
+  }
 
 /*Форма заявки*/
 .box-services-arena .box-services-element:last-child{
