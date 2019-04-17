@@ -723,12 +723,16 @@
 		</div>
 		<div class="clarification-caption">Заполните форму и мы с Вами обязательно свяжимся для подтверждения записи</div>
 		<div class="form-form">
-			<form method="post" action="/index">
+			<form method="post" class="modal__form" name="request">
 				<div class="box-services-arena"></div>
-				<input type="text" class="client-name" name="name" placeholder="Имя" required>
+				<input type="text" class="client-name" name="name" placeholder="Имя">
 				<input type="text" class="client-phone" name="phone" placeholder="Номер телефона" required>
 				<input type="text" class="client-mail" name="email" placeholder="Электронная почта">
 				<textarea type="textarea" class="client-message" name="message" placeholder="Сообщение"></textarea>
+				<div class="modal__form-captcha">
+					<canvas id='captcha' width='120' height='40'></canvas>
+					<input type="text" class="client-captcha" name="captcha" placeholder="Введите код">
+				</div>
 				<button type="submit" class="btn-forum">Отправить</button>
 			</form>
 		</div>
@@ -789,7 +793,6 @@
 		<button class="box-services-element-close">X</button>
 	</div>
 </template>
-
 
 <script src="public/js/js.js"></script>
 

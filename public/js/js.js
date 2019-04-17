@@ -1,3 +1,6 @@
+/* import { resolve } from "path";
+import { rejects } from "assert"; */
+
 //Слайды
 var slideWidth = 1440;
 var slideArena = document.querySelector('.header-slide-arena');
@@ -418,7 +421,6 @@ function renderingServicesHead(bd){
 	var current = 0;
 
 	bd.forEach(function(count){
-		console.log(count);
 		var block = element.querySelector('.services-block');
 		var blockServices = containerForList.appendChild(block.cloneNode(true));
 		var servicesBlockCaption = element.querySelector('.services-block-caption');
@@ -796,3 +798,139 @@ function getElementForGallery(data, id){
 document.querySelector('.btn-inst').addEventListener('click', function(){
 	window.open('https://www.instagram.com/dianovapermanent_foto/');
 });
+
+
+var canvas = document.getElementById('captcha');
+var x = canvas.getContext('2d');
+var arr = ['word','dino','sofa'];
+var keyword;
+var _reset = function() {
+	x.clearRect(0, 0, x.width, x.height)
+	keyword = Math.random().toString(36).replace(/[^a-z1-9]+/g,'').substr(0, 5);
+
+	var grad = x.createLinearGradient(0,0,120,40);
+
+	grad.addColorStop(0.0,'rgb(113,244,174)');
+	grad.addColorStop(1.0,'rgb(247,203,109)');
+	x.fillStyle=grad;
+	x.fillRect(0,5,110,40);
+
+	x.strokeStyle='rgb(140,140,140)';
+	x.beginPath();
+	x.moveTo(5,10);
+	x.lineWidth=1;
+	x.lineTo(25,15);
+	x.stroke();
+
+	x.strokeStyle='rgb(205,125,204)';
+	x.beginPath();
+	x.moveTo(25,30);
+	x.lineWidth=1;
+	x.lineTo(80,15);
+	x.stroke();
+
+	x.strokeStyle='rgb(125,115,205)';
+	x.beginPath();
+	x.moveTo(60,10);
+	x.lineWidth=1;
+	x.lineTo(90,35);
+	x.stroke();
+
+	x.font='25px Arial';
+	x.fillStyle='black';
+	x.textBaseline='top';
+	x.fillText(keyword,10,10);
+}
+_reset();
+/* $('#update').click(_reset);
+$('input[name=submit]').click(function(){
+	var check=$('input[name=captcha]').val();
+	if(keyword!=check){
+		$('#wrong').text('Вы ввели неверный код');
+		return false;
+	}
+}); */
+
+document.querySelector('.modal__form').addEventListener('submit', sendMail);
+
+function sendMail(event) {
+	event.preventDefault();
+
+    var form = event.target;
+
+	form.querySelector('.btn-forum').disabled = true;
+
+	let alert = form.querySelector('.alert');
+
+    if (alert) alert.remove();
+
+    let phone = form.querySelector('.client-phone').value;
+
+    if(phone === '' || phone.length < 6) {
+        let message = '';
+        phone === '' ? message = "Заполните поле Телефон" : message = "Введите Телефон правильно";
+		alertDanger(message);
+		
+        return false;
+	}
+	
+	let check = form.querySelector('.client-captcha').value;
+
+	if (check == !keyword)  {
+		let message = 'Введите символы на картинке';
+		alertDanger(message);
+		
+        return false;
+	}
+
+    function alertDanger(mess){
+		var errorTemplate = document.createElement('DIV');
+
+		errorTemplate.classList.add('alert');
+		errorTemplate.classList.add('alert-danger');
+
+		errorTemplate.textContent = mess;
+		
+    	form.querySelector('.btn-forum').disabled = false;
+        form.appendChild(errorTemplate);
+        setTimeout(function(){
+        	form.querySelector('.alert-danger').remove();
+        }, 3000);
+	}
+
+	let name = form.querySelector('.client-name').value;
+	let email = form.querySelector('.client-mail').value;
+	let message = form.querySelector('.client-message').value;
+	let services = form.querySelector('.box-services-arena').value;
+
+	let data = {
+		name,
+		phone,
+		email,
+		message,
+		services
+	}
+	let dataEncode = '';
+
+	for (let item in data) {
+		if (dataEncode) dataEncode += '&';
+
+		dataEncode += item + '=';
+		dataEncode += encodeURIComponent(data[item]);
+	}
+	
+	var xhr = new XMLHttpRequest();
+
+	xhr.open('POST', '/mail', true);
+
+	xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+	xhr.send(dataEncode);
+
+	if (xhr.status != 200) {
+		console.log( xhr.status + ': ' + xhr.statusText );
+	} else {
+		console.log( xhr.responseText );
+	}
+
+	formBtnModal.close();
+};

@@ -11,22 +11,22 @@ app.set('view engine', 'handlebars');
 
 app.use('/public', express.static(path.join(__dirname, 'public')));
 
-app.use(bodyParser.urlencoded({extended: false}))
+app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json())
 
 app.get('/', (req, res) => {
 	res.render('index');
 });
 
-app.post('/index', (req, res) => {
+app.post('/mail', (req, res) => {
 	const output = `
 	<p>Пришла новая заявка.</p><p>Имя: ${req.body.name}</p>
 	<p>Номер телефона: ${req.body.phone}</p>
-	<p>Электронная почта: ${req.body.email}</p>
-	<p>Дата: ${req.body.date}</p>
-	<p>Время: ${req.body.time}</p>
+    <p>Электронная почта: ${req.body.email}</p>
+    <p>Сообщение: ${req.body.message}</p>
 	<p>Выбранные услуги: ${req.body.serv}</p>`;
 
+    res.render('index', {msg:'Сообщение отправлено. Ждите звонка'});
 
     // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
@@ -45,7 +45,8 @@ app.post('/index', (req, res) => {
     // setup email data with unicode symbols
     let mailOptions = {
         from: '"Client contact" <t3.t3st@yandex.ru>', // sender address
-        to: 'dianova.1981@bk.ru', // list of receivers
+        // to: 'dianova.1981@bk.ru', // list of receivers
+        to: 'Redrenalobad@yandex.ru', // list of receivers
         subject: 'Node Contact Request', // Subject line
         text: 'Hello world?', // plain text body
         html: output // html body
@@ -59,8 +60,7 @@ app.post('/index', (req, res) => {
         console.log('Message sent: %s', info.messageId);
         console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
 
-        res.render('index', {msg:'Сообщение отправлено. Ждите звонка'});
-
+        // res.render('index', {msg:'Сообщение отправлено. Ждите звонка'});
     });
 });
 
