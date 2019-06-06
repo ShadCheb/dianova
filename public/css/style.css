@@ -1349,7 +1349,7 @@ footer{
       }
     .stock-option{
       float: left;
-      width: 50%;
+      width: 75%;
     }
       .stock-option-header{
         font-size: 18px;
@@ -1387,14 +1387,14 @@ footer{
         padding-left: 45px;
         margin-bottom: 10px;
       }
-        .stock-top-master-header::after{
+        /* .stock-top-master-header::after{
           content: '';
           position: absolute;
           left: 0;
           height: 100%;
           width: 42px;
           background: url(../img/star-icon.png) repeat-x left center;
-        }
+        } */
     .stock-master{
       float: left;
       width: 25%;
@@ -1792,8 +1792,13 @@ footer{
   .advantages-area::after{
     display: none;
   }
+  .stock-option {
+    width: 65%;
+  }
+  .stock-top-master {
+    width: 35%;
+  }
 }
-
 
 @media only screen and (max-width: 820px){
 
@@ -1865,7 +1870,6 @@ footer{
     .advantages-cell:nth-child(4){
       height: 170px;
     } 
-
 }
 
 @media only screen and (max-width: 750px){
@@ -2035,7 +2039,7 @@ footer{
       display: inline-block;
     }
     .stock-option{
-      width: 70%;
+      width: 80%;
     }
     .stock-top-master{
       width: 15%;
@@ -2158,7 +2162,7 @@ footer{
   }
 
     .stock-option{
-      width: 60%;
+      width: 70%;
     }
     .stock-option-list, .stock-top-master-list, .stock-master-header-list{
       font-size: 14px;
@@ -2166,24 +2170,16 @@ footer{
       width: 80%;
     }
     .stock-option-header{
-      font-size: 15px;
-      line-height: 24px;
-      margin-left: 0;
-      width: 80%;
-      height: 50px;
+      display: none;
     }
     .stock-top-master{
-      width: 22%;
+      width: 30%;
     }
       .stock-top-master-header{
-        margin-bottom: 35px;
+        display: none;
       }
       .stock-master-header{
         margin-bottom: 35px;
-      }
-      .stock-top-master-list,
-      .stock-master-list{
-        height: 44px;
       }
 
     .services-block-list{
@@ -2218,6 +2214,12 @@ footer{
   .advantages-cell:nth-child(4){
     height: 220px;
   }
+  .stock-option {
+    width: 80%;
+  }
+  .stock-top-master {
+    width: 20%;
+  }
 }
 
 .alert {
@@ -2240,4 +2242,36 @@ footer{
 .modal__form-captcha .client-captcha {
   margin-left: 4px;
   margin-bottom: 0;
+}
+
+.stock-sentence {
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+.stock-sentence-row {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+.stock-sentence-text {
+  margin-right: 20px;
+  color: #000;
+  font-size: 18px;
+  line-height: 1.2em;
+}
+.stock-sentence-text span {
+  font-weight: bold;
+  color: #17a09e;
+}
+.stock-sentence-value {
+  text-align: center;
+}
+.sst-big {
+  font-size: 32px;
+  font-weight: bold;
+  color: #17a09e;
+}
+.sst-small {
+  font-size: 18px;
+  color: #17a09e;
 }

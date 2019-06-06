@@ -57,12 +57,12 @@ __jsonpFunctionServices([
         "data": [
           {
             "name": "Стрелки классические",
-            "price": "10000",
+            "price": "12000",
             "id": "service_10"
           },
           {
             "name": "Стрелки с растушевкой",
-            "price": "12000",
+            "price": "13000",
             "id": "service_11"
           },
           {
@@ -77,7 +77,7 @@ __jsonpFunctionServices([
         "data": [
           {
             "name": "Губы Nude",
-            "price": "10000",
+            "price": "12000",
             "id": "service_13"
           }
         ]
@@ -87,12 +87,12 @@ __jsonpFunctionServices([
         "data": [
           {
             "name": "Микроблейдинг бровей",
-            "price": "10000",
+            "price": "12000",
             "id": "service_14"
           },
           {
             "name": "Пудровые брови",
-            "price": "10000",
+            "price": "12000",
             "id": "service_15"
           }
         ]
